@@ -14,56 +14,93 @@
 
 
     <div class="row">
-        <form>
+        <form  [formGroup]="orderForm">
             <div class="row">
-                <div class="col-6">
+                <div class="col-5">
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text">Supplier:</span>
                         </div>
-                        <select class="form-control">
-                            <option></option>
-        
+                        <select class="form-control" formControlName="supplier_id">
+                            <option *ngFor="let supplier of suppliers" value="{{supplier.supplier_id}}">{{supplier.Supplier_Name}}</option>
+
                           </select>
                     </div>
 
                 </div>
-                <div class="col-6">
+                <div class="col-5">
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text"> Item Name:</span>
                         </div>
-                        <input type="text" class="form-control">
+                        <select class="form-control" formControlName="Inventory_id">
+                          <option *ngFor="let inventory of inventories" value="{{inventory.inventory_id}}">{{inventory.inventory_Name}}</option>
 
-
+                        </select>
                     </div>
 
                     <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">Quantity:</span>
-                        </div>
-                        <input type="number" class="form-control" min="1">
-                    </div>
+                      <div class="input-group-prepend">
+                          <span class="input-group-text">Quantity:</span>
+                      </div>
+                      <input type="number" formControlName="Quantity" class="form-control" min="1">
+                  </div>
 
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text"> Quoted Price:</span>
                         </div>
-                        <input type="text" class="form-control">
+                        <input type="number" class="form-control"  formControlName="Price">
 
 
                     </div>
 
                 </div>
+
+                <div class="col-2">
+                    <div class="input-group mb-3">
+                        <a  routerLink="/add-inventory">create inventory</a>
+                    </div>
+
+                </div>
+
             </div>
 
+            <div *ngIf="updateStatus ">
+            <hr/>
+            <div class="row">
+              <div class="col-5">
+                <div class="input-group mb-4">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Received order</span>
+                </div>
+                <input type="checkbox" class="form-control"  formControlName="ReceivedStatus">
+
+                </div>
+            </div>
+          </div>
+
+
+
+          <div class="form-group row">
+            <div class="col-8">
+              <!-- <div class="input-group mb-5"> -->
+                <!-- <div class="input-group-prepend"> -->
+                  <label >Proof of Payment</label>
+              <!-- </div> -->
+                <input type="file" (change)="onChange($event)" class="form-control"  formControlName="Proof">
+            </div>
+          <!-- </div> -->
+        </div>
+<br>
+</div>
 
 
             <div class="row">
-                <div class="col-6">
-                    <button type="button" class="btn btn-primary">Place Order</button>
+                <div class="col-4">
+                    <button type="button" class="btn btn-primary" (click)="placeOrder()" [disabled]='!orderForm.valid' >Place Order</button>
                 </div>
-                <div class="col-6 ">
+                <div class="col-4 ">
                     <button type="button" class="btn btn-danger float-right" routerLink="/orders">Cancel</button>
                 </div>
             </div>

@@ -24,14 +24,14 @@ export class AddCategoryComponent implements OnInit {
     private apiService:ApiService ,
     private formBuilder: FormBuilder,
     private router: Router,
-    ) 
+    )
     {
       this.categoryForm = this.formBuilder.group({
         Category_Name : ['', Validators.required],
         Category_Description : ['', Validators.required],
-       
+
       });
-    
+
 
      }
 
@@ -40,19 +40,21 @@ export class AddCategoryComponent implements OnInit {
 
   confirmCategory() {
     this.modalService.open(this.confirm,{ centered: true });
-  } 
+  }
 
   creationSuccess() {
     this.modalService.open(this.success,{ centered: true });
-  } 
+  }
 
   createCategory(){
     var newCategory =this.categoryForm.value;
+    console.log('inside create category before',newCategory)
     this.apiService.createCategory(newCategory).subscribe((data: any[])=>{
+      console.log('inside create category',data)
       this.router.navigate(["/category"]);
       this.modalService.dismissAll();
       this.creationSuccess();
-    })  
+    })
   }
 
 }

@@ -60,8 +60,8 @@ import { PlaceOrderComponent } from './place-order/place-order.component';
     UpdateCategoryComponent,
     HighlightPipe,
     StockTakingComponent,
-    PlaceOrderComponent
-  ],
+    PlaceOrderComponent,
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,

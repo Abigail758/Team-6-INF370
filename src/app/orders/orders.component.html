@@ -42,7 +42,7 @@
         </thead>
 
 
-        <tr>
+        <!-- <tr> -->
             <!-- <td [innerHTML]="category.Category_Id | highlight:keywords"></td>
             <td [innerHTML]="category.Category_Name | highlight:keywords"></td>
             <td [innerHTML]="category.Category_Description | highlight:keywords"></td> -->
@@ -55,7 +55,23 @@
             <td>
                 <button type="button" class="btn btn-danger" (click)="confirmDelete(category.Category_Id)"><mat-icon>delete</mat-icon></button>
             </td> -->
-        </tr>
+        <!-- </tr> -->
+
+        <tr *ngFor="let item of order |filter:keywords">
+          <td [innerHTML]="item.supplier_id | highlight:keywords"></td>
+          <td [innerHTML]="item.supplier_Name | highlight:keywords"></td>
+          <td [innerHTML]="item.supplier_Name | highlight:keywords"></td>
+          <td [innerHTML]="item.supplier_Name | highlight:keywords"></td>
+          <td [innerHTML]="item.supplier_Name | highlight:keywords"></td>
+          <td [innerHTML]="item.supplier_Name | highlight:keywords"></td>
+          <td [innerHTML]="item.supplier_Name | highlight:keywords"></td>
+          <td [innerHTML]="item.supplier_Name | highlight:keywords"></td>
+          <!-- <td [innerHTML]="item.Quantity | highlight:keywords"></td> -->
+          <td> <button type="button" class="btn btn-primary" (click)="updateOrder(item)"><mat-icon>assignment</mat-icon></button>
+          </td>
+          <td> <button type="button" class="btn btn-danger" (click)="confirmDelete(item.Inventory_Id)"><mat-icon>delete</mat-icon></button>
+          </td>
+      </tr>
 
 
     </table>
@@ -63,7 +79,7 @@
 
 </div>
 
-<!-- 
+<!--
 <ng-template #confirmDeletion let-modal>
     <div class="modal-header alert alert-warning">
         <h3 class="modal-title" style="text-align: center">Warning</h3>

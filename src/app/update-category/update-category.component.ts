@@ -13,8 +13,8 @@ import { ApiService } from '../api.service';
 export class UpdateCategoryComponent implements OnInit {
   @ViewChild('success') success : any;
   categoryForm: any;
-  
- 
+
+
   constructor
   (
     private modalService: NgbModal,
@@ -22,14 +22,14 @@ export class UpdateCategoryComponent implements OnInit {
     private apiService:ApiService ,
     private formBuilder: FormBuilder,
     private router: Router,
-    ) 
+    )
     {
       this.categoryForm = this.formBuilder.group({
         Category_Name : ['', Validators.required],
         Category_Description : ['', Validators.required],
-       
+
       });
-    
+
 
      }
 
@@ -40,12 +40,12 @@ export class UpdateCategoryComponent implements OnInit {
 
  loadCategory(){
 
-    this.apiService.getCategoryDetailsById(sessionStorage.getItem('updateCategoryID')).subscribe(category=> {  
-      console.log(category)
-      this.categoryForm.controls['Category_Name'].setValue(category.Category_Name);        
-      this.categoryForm.controls['Category_Description'].setValue(category.Category_Description); 
+    this.apiService.getCategoryDetailsById(sessionStorage.getItem('updateCategoryID')).subscribe(category=> {
+      console.log('loadcategory', category)
+      this.categoryForm.controls['Category_Name'].setValue(category.Category_Name);
+      this.categoryForm.controls['Category_Description'].setValue(category.Category_Description);
 
-    }); 
+    });
   }
 
   updateCategory(){
@@ -54,7 +54,7 @@ export class UpdateCategoryComponent implements OnInit {
   this.apiService.updateCategory(updatedCategory).subscribe(category=>{
   this.router.navigate(["/category"]);
   sessionStorage.removeItem('updateCategoryID');
-  this.modalService.dismissAll();  
+  this.modalService.dismissAll();
   this.modalService.open(this.success,{ centered: true});
 
 

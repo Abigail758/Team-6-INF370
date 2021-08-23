@@ -7,6 +7,7 @@ import { CategoryComponent } from './category/category.component';
 import { InventoryComponent } from './inventory/inventory.component';
 import { OrdersComponent } from './orders/orders.component';
 import { PlaceOrderComponent } from './place-order/place-order.component';
+import { StockTakingComponent } from './stock-taking/stock-taking.component';
 import { UpdateCategoryComponent } from './update-category/update-category.component';
 
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
 {path:"category",component:CategoryComponent},
 {path:"orders",component:OrdersComponent},
 {path:"place-order",component:PlaceOrderComponent},
+{path:"stock-taking",component: StockTakingComponent},
 
 
 ];

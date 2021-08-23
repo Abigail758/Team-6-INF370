@@ -21,21 +21,22 @@ export class CategoryComponent implements OnInit {
     private apiService:ApiService,
     private modalService: NgbModal,
     private router: Router,
-  ) 
-  { 
+  )
+  {
   }
 
   ngOnInit(): void {
     this.loadAllCategories();
   }
 
-  loadAllCategories() { 
+  loadAllCategories() {
    this.apiService.getAllCategories().subscribe(categories=>{
+     console.log('this cat from serv', categories)
     this.categories = categories;
-  
-    });  
+
+    });
     return this.categories;
-  }  
+  }
 
   confirmDelete(id){
     sessionStorage.setItem('deleteCategoryID',id.toString());
@@ -49,7 +50,7 @@ export class CategoryComponent implements OnInit {
       this.loadAllCategories();
       sessionStorage.removeItem('deleteCategoryID');
       this.modalService.open(this.success,{ centered: true});
-     
+
 });
 
   }
