@@ -13,6 +13,7 @@ import { ApiService } from '../api.service';
 export class UpdateCategoryComponent implements OnInit {
   @ViewChild('success') success : any;
   categoryForm: any;
+  category: any;
 
 
   constructor
@@ -40,25 +41,25 @@ export class UpdateCategoryComponent implements OnInit {
 
  loadCategory(){
 
-    this.apiService.getCategoryDetailsById(sessionStorage.getItem('updateCategoryID')).subscribe(category=> {
-      console.log('loadcategory', category)
-      this.categoryForm.controls['Category_Name'].setValue(category.Category_Name);
-      this.categoryForm.controls['Category_Description'].setValue(category.Category_Description);
+   this.category =  this.apiService.getCategoryDetailsById(sessionStorage.getItem('updateCategoryID'))//.subscribe(category=> {
+      console.log('loadcategory', this.category)
+      this.categoryForm.controls['Category_Name'].setValue(this.category.Category_Name);
+      this.categoryForm.controls['Category_Description'].setValue(this.category.Category_Description);
 
-    });
+  //  });
   }
 
   updateCategory(){
   var updatedCategory=this.categoryForm.value;
   updatedCategory.Category_Id=sessionStorage.getItem('updateCategoryID');
-  this.apiService.updateCategory(updatedCategory).subscribe(category=>{
+  this.apiService.updateCategory(updatedCategory)//.subscribe(category=>{
   this.router.navigate(["/category"]);
   sessionStorage.removeItem('updateCategoryID');
   this.modalService.dismissAll();
   this.modalService.open(this.success,{ centered: true});
 
 
-  })
+ // })
 
 }
 

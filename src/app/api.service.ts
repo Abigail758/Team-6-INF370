@@ -13,34 +13,55 @@ export class ApiService {
   constructor(private http: HttpClient) { }
   orders: any[] = [];
   order: any;
+  categories: any[] = [];
+  category: any;
 
   //Category||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-  getAllCategories(): Observable<any[]> {
-    return this.http.get<any[]>(this.apiUrl + 'getCategories');
+  getAllCategories()//: Observable<any[]> {
+    {
+      return this.categories;
+   // return this.http.get<any[]>(this.apiUrl + 'getCategories');
   }
 
 
-  getCategoryDetailsById(categoryID: string): Observable<any> {
-  return this.http.get<any>(this.apiUrl + 'getCategoryDetailsById/' + categoryID);
+  getCategoryDetailsById(categoryID )//: Observable<any> {
+    {
+      console.log('getcatby id serv', categoryID)
+      console.log('getcatby id serv', this.categories)
+       this.category=  this.categories.find(x=> x.Category_Id === categoryID);
+       console.log('getcatby id serv', this.category)
+       return this.category
+ // return this.http.get<any>(this.apiUrl + 'getCategoryDetailsById/' + categoryID);
   }
 
 
 
 
-  createCategory(category: any): Observable<any> {
+  createCategory(category: any)//: Observable<any> {
+    {
     console.log(this.apiUrl + 'insertCategoryDetails/')
-  return this.http.post<any>(this.apiUrl + 'insertCategoryDetails/',category, httpOptions);
+    console.log('this is cat', category)
+      this.categories.push(category);
+  //return this.http.post<any>(this.apiUrl + 'insertCategoryDetails/',category, httpOptions);
   }
 
 
-  updateCategory(category: any): Observable<any> {
-  return this.http.put<any>(this.apiUrl + 'updateCategoryDetails/',category, httpOptions);
+  updateCategory(category: any)//: Observable<any> {
+    {
+     let index = this.categories.findIndex(x=> x.categoryID == category.categoryID);
+      this.categories.splice(index,1)
+      this.categories.push(category);
+      return
+ // return this.http.put<any>(this.apiUrl + 'updateCategoryDetails/',category, httpOptions);
   }
 
 
 
-  deleteCategoryById(categoryID: string): Observable<number> {
-  return this.http.delete<number>(this.apiUrl + 'deleteCategoryDetails?id=' +categoryID,httpOptions);
+  deleteCategoryById(categoryID: string)//: Observable<number> {
+    {
+      let index = this.categories.findIndex(x=> x.categoryID == categoryID);
+      this.categories.splice(index,1)
+ // return this.http.delete<number>(this.apiUrl + 'deleteCategoryDetails?id=' +categoryID,httpOptions);
   }
 
   //Inventory||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||

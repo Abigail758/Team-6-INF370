@@ -30,12 +30,13 @@ export class CategoryComponent implements OnInit {
   }
 
   loadAllCategories() {
-   this.apiService.getAllCategories().subscribe(categories=>{
-     console.log('this cat from serv', categories)
-    this.categories = categories;
 
-    });
-    return this.categories;
+ return this.categories = this.apiService.getAllCategories()//.subscribe(categories=>{
+    // console.log('this cat from serv', categories)
+ //   this.categories = categories;
+
+   // });
+   // return this.categories;
   }
 
   confirmDelete(id){
@@ -45,13 +46,13 @@ export class CategoryComponent implements OnInit {
   }
 
   deleteCategory(){
-    this.apiService.deleteCategoryById(sessionStorage.getItem('deleteCategoryID')).subscribe(data=>{
+    this.apiService.deleteCategoryById(sessionStorage.getItem('deleteCategoryID'))//.subscribe(data=>{
       this.modalService.dismissAll();
       this.loadAllCategories();
       sessionStorage.removeItem('deleteCategoryID');
       this.modalService.open(this.success,{ centered: true});
 
-});
+//});
 
   }
 
