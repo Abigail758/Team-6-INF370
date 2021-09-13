@@ -1,0 +1,85 @@
+
+<div class="addpro-container">
+    <form >
+      <h1 >Add Project</h1>
+
+        <label>Project Name:</label><br>
+        <mat-form-field class="full-width" appearance="outline">
+          <input matInput  placeholder="Enter the project name" class="form-control"
+          >
+          <mat-hint></mat-hint>
+        </mat-form-field>
+        <br><br>
+
+        <label>Project Description:</label><br>
+        <mat-form-field class="full-width" appearance="outline">
+          <textarea matInput placeholder="The project will include..."
+          class="form-control"
+></textarea>
+
+        </mat-form-field>
+        <br><br>
+
+        <label>Project Status:</label><br>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-select placeholder="Select project status" class="form-control"
+          >
+            <mat-option value="In Progress">In Progress</mat-option>
+            <mat-option value="On-Hold">On-Hold</mat-option>
+            <mat-option value="Completed">Completed</mat-option>
+            <mat-option value="Cancelled">Canceled</mat-option>
+            <mat-option value="Archived">Archived</mat-option>
+            
+          </mat-select>
+          
+        </mat-form-field>
+        <br><br>
+
+        <label>Start Date</label><br>
+        <mat-form-field appearance="outline" class="full-width">
+          <input matInput [matDatepicker]="picker" placeholder="Select project start date"
+          class="form-control"
+          >
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <br><br>
+
+        <label>End Date</label><br>
+        <mat-form-field appearance="outline" class="full-width">
+          <input matInput [matDatepicker]="picker1" placeholder="Select project start date"
+          class="form-control"
+          >
+          <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+          <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field>
+        <br><br>
+        
+        <label>Site Name:</label><br>
+        <mat-form-field class="full-width" appearance="outline">
+          <input matInput placeholder="Enter the site name"  class="form-control"
+          >
+
+        </mat-form-field>
+        <br><br>
+
+        <label>Site Address:</label><br>
+        <mat-form-field class="full-width" appearance="outline">
+          <textarea matInput placeholder="Enter the site address" class="form-control"
+         ></textarea>
+
+        </mat-form-field>
+        <br><br>
+
+        <div class="button-flex-container">
+         
+          <button routerLink="/project" class="btn btn-danger" >Cancel</button>
+          &nbsp;&nbsp;
+          <button [disabled] class="btn btn-primary" >       
+            Save
+        </button> 
+      
+      </div>
+
+    </form>
+  </div>

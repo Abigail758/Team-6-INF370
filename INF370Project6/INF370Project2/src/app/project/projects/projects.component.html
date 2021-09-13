@@ -1,0 +1,49 @@
+<h1 class="title"> Projects</h1>
+<br>
+<div>
+  <input  type="text" id="searchprojectinput" placeholder="Search Project">
+  <button class="btn btn-primary">Search</button>
+</div>
+
+<div class="top-right">
+    <button class="btn btn-primary btn-lg"  id="addpro" routerLink="/addupdateproject">
+    Add Project </button>
+</div>
+<div class="row" >
+  <div class="col-xs-12">
+    <div class="table table-responsive table-hover">
+      <table class="table table-bordered table-condensed ">
+        <thead>
+          <tr>
+            <th>Project Name</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Site Address</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let project of projects">
+            <td>{{project.Project_Name}}</td>
+            <td>{{project.Start_Date | date }}</td>
+            <td>{{project.End_Date | date }}</td>
+            <td>{{project.Site_Address}}</td>
+
+            <td > 
+              <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+                  <mat-icon>more_vert</mat-icon>
+              </button>
+              <mat-menu  #menu="matMenu" class="popup_menu" xPosition="before">
+              <button [routerLink]="['/add-update-project']" mat-menu-item><mat-icon>edit_note</mat-icon>Update Project</button>
+              <button [routerLink]="['/view-project']" mat-menu-item><mat-icon>description</mat-icon>View Project</button>
+              <button [routerLink]="['/complete-project']" mat-menu-item><mat-icon>task</mat-icon>Complete Project</button>
+              <button [routerLink]="['/add-phase']" mat-menu-item><mat-icon>task</mat-icon>Add Phase</button>
+            </mat-menu>
+          </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+

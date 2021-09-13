@@ -1,0 +1,55 @@
+<div class="container" >
+    <h1>Complete Project</h1>
+    <h3>Project Details</h3>
+    <div>
+        <label>Project Name: </label> <p>Structural Steel Staircase</p>
+    <div>
+        <label>Project Description: </label> <p>Build a structural steel staircase structure for a factory</p>
+    </div>
+ 
+    <div>
+        <label>Start Date: </label> <p>04 May 2021</p>
+    </div>
+    <div>
+        <label>End Date: </label> <p>15 November 2021</p>
+    </div>
+    <div>
+        <label>Site Name:  </label> <p>Tshwane Automotive Zone</p>
+    </div>
+    <div>
+        <label>Site Address: </label> <p>Alwyn St, Samcor Park, Pretoria, 0184</p>
+    </div>
+</div>
+<h3>Please enter project completion details for the above project</h3>
+
+<div>
+
+    <label>Project Status:</label>
+    <br>
+<mat-form-field appearance="outline" >   
+    <span> 
+    <mat-select matNativeControl required panelClass="panel-custom-width">
+      <mat-option value="In Progress">In Progress</mat-option>
+      <mat-option value="On Hold">On Hold</mat-option>
+      <mat-option value="Archived">Archived</mat-option>
+      <mat-option value="Cancelled">Cancelled</mat-option>
+    </mat-select>
+</span>
+</mat-form-field> 
+</div>
+<br>
+ 
+  <label>Comments:</label> 
+  <br>
+  <mat-form-field appearance="outline" >
+  <textarea matInput placeholder="Comment on the project" formControlName="Comment" class="form-control"  > 
+</textarea>
+</mat-form-field>
+
+<br>
+<div class="center-btn">
+<button id="btn1" class="btn btn-danger" routerLink="/project">Close</button>&nbsp;
+<button id="btn2" class="btn btn-primary" routerLink="/project">Submit</button>
+</div>
+
+

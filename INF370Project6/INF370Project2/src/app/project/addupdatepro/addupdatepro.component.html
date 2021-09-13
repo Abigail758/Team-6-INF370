@@ -1,0 +1,90 @@
+
+<div class="addpro-container">
+    
+      <h1 >Add Project</h1>
+      <div class="form-group">
+        <label>Project Name:</label><br>
+        <mat-form-field class="full-width" appearance="outline">
+          <input matInput  placeholder="Enter the project name" [(ngModel)]="project.Project_Name"
+          class="form-control"
+          >
+          <mat-hint></mat-hint>
+        </mat-form-field>
+        <br><br>
+       </div>
+        <label>Project Description:</label><br>
+        <mat-form-field class="full-width" appearance="outline">
+          <textarea matInput placeholder="The project will include..."
+          class="form-control"   [(ngModel)]="project.Project_Description"
+></textarea>
+
+        </mat-form-field>
+        <br><br>
+        <div class="form-group"></div>
+        <label>Project Status:</label><br>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-select placeholder="Select project status" class="form-control"
+          [(ngModel)]="project.Project_Status">
+            <mat-option value="In Progress">In Progress</mat-option>
+            <mat-option value="On-Hold">On-Hold</mat-option>
+            <mat-option value="Completed">Completed</mat-option>
+            <mat-option value="Cancelled">Canceled</mat-option>
+            <mat-option value="Archived">Archived</mat-option>
+            
+          </mat-select>
+          
+        </mat-form-field>
+        <br><br>
+        <div class="form-group">
+        <label>Start Date</label><br>
+        <mat-form-field appearance="outline" class="full-width">
+          <input matInput [matDatepicker]="picker" placeholder="Select project start date" 
+          class="form-control"  [(ngModel)]="project.Start_Date"
+          >
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        </div>
+        <br><br>
+
+        <div class="form-group">
+        <label>End Date</label><br>
+        <mat-form-field appearance="outline" class="full-width">
+          <input matInput [matDatepicker]="picker1" placeholder="Select project start date"
+          class="form-control"  [(ngModel)]="project.End_Date"
+          >
+          <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+          <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field>
+        </div>  
+        <br><br>
+        
+        <div class="form-group">
+        <label>Site Name:</label><br>
+        <mat-form-field class="full-width" appearance="outline">
+          <input matInput placeholder="Enter the site name"  class="form-control"  [(ngModel)]="project.Site_Name"
+          >
+        </mat-form-field>
+    </div>
+        <br><br>
+
+        <div class="form-group">
+        <label>Site Address:</label><br>
+        <mat-form-field class="full-width" appearance="outline">
+          <textarea matInput placeholder="Enter the site address" class="form-control"  [(ngModel)]="project.Site_Address"
+         ></textarea>
+
+        </mat-form-field>
+    </div>
+        <br><br>
+
+        <div class="button-flex-container">
+         
+          <button routerLink="/project" class="btn btn-danger" (click)="goBack()">Cancel</button>
+          &nbsp;&nbsp;
+          <button [disabled] class="btn btn-primary" (click)="saveProduct()">Save</button> 
+      
+      </div>
+
+    
+  </div>
