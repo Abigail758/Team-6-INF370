@@ -1,4 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { ReactiveFormsModule } from '@angular/forms';
+
+export interface DialogData {
+  accept: string;
+  decline: string;
+}
 
 @Component({
   selector: 'app-tender',
@@ -7,9 +14,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TenderComponent implements OnInit {
 
-  constructor() { }
+  accept!: string;
+  decline!: string;
+  dialogRef: any;
+
+  constructor((public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
 
+  
+
+
 }
+
+
+
+
