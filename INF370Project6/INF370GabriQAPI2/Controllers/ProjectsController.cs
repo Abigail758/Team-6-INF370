@@ -16,7 +16,7 @@ using System.Web.Http.Cors;
 namespace INF370GabriQAPI.Controllers
 {
 
-    [EnableCors(origins: "http://mywebclient.azurewebsites.net", headers: "*", methods: "*")]
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class ProjectsController : ApiController
     {
         private Gabriq_System_DatabaseEntities db = new Gabriq_System_DatabaseEntities();
