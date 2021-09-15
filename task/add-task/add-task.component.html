@@ -1,0 +1,76 @@
+<div class="addtask-container">
+    <form >
+      <h1 >Add Task</h1>
+
+        <label>Task Name:</label><br>
+        <mat-form-field class="full-width" appearance="outline">
+          <input matInput  placeholder="Enter the task name" class="form-control"
+          >
+          <mat-hint></mat-hint>
+        </mat-form-field>
+        <br><br>
+
+        <label>Task Description:</label><br>
+        <mat-form-field class="full-width" appearance="outline">
+          <textarea matInput placeholder="The task is to..."
+          class="form-control"
+></textarea>
+
+        </mat-form-field>
+        <br><br>
+
+        <label>Task Status:</label><br>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-select placeholder="Select task status" class="form-control"
+          >
+            <mat-option value="In Progress">In Progress</mat-option>
+            <mat-option value="On-Hold">On-Hold</mat-option>
+            <mat-option value="Completed">Completed</mat-option>
+            <mat-option value="Cancelled">Canceled</mat-option>
+            <mat-option value="Archived">Archived</mat-option>
+            
+          </mat-select>
+          
+        </mat-form-field>
+        <br><br>
+
+        <label>Start Date:</label><br>
+        <mat-form-field appearance="outline" class="full-width">
+          <input matInput [matDatepicker]="picker" placeholder="Select task start date"
+          class="form-control"
+          >
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <br><br>
+
+        <label>End Date</label><br>
+        <mat-form-field appearance="outline" class="full-width">
+          <input matInput [matDatepicker]="picker1" placeholder="Select task end date"
+          class="form-control"
+          >
+          <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+          <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field>
+        <br><br>
+        
+        <label>Equipment Needed:</label><br>
+        <mat-form-field class="full-width" appearance="outline">
+          <input matInput placeholder="Enter the equipment needed"  class="form-control"
+          >
+
+        </mat-form-field>
+        <br><br>
+
+        <div class="button-flex-container">
+         
+          <button routerLink="/task" class="btn btn-danger" >Cancel</button>
+          &nbsp;&nbsp;
+          <button [disabled] class="btn btn-primary" >       
+            Add 
+        </button> 
+      
+      </div>
+
+    </form>
+  </div>

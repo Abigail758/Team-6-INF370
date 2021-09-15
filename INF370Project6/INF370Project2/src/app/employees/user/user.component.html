@@ -1,0 +1,183 @@
+<mat-toolbar>
+  <button mat-icon-button (click)="drawer.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span class="header">GabriQ Pty Ltd</span>
+  <span class="spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" [routerLink]="['/login']" aria-label="Example icon-button with heart icon">
+    <mat-icon>account_circle</mat-icon>
+  </button>
+
+</mat-toolbar>
+
+<mat-drawer-container class="container" autosize >
+<mat-drawer #drawer class="sidenav" mode="side">
+  <h2>Menu</h2>
+
+  <button mat-button class="menu-button">
+          <mat-icon>home</mat-icon>
+          <span>Home</span>
+      </button>
+       <mat-divider></mat-divider>
+      <button mat-button class="menu-button" [routerLink]="['/projects']">
+          <mat-icon> gite</mat-icon>
+          <span> Project</span>
+      </button> <mat-divider></mat-divider>
+       <button mat-button class="menu-button" [routerLink]="['/phase']">
+          <mat-icon>assignment</mat-icon>
+          <span>Phase</span>
+      </button>  <mat-divider></mat-divider>
+       <button mat-button class="menu-button" [routerLink]="['/task']">
+          <mat-icon>task</mat-icon>
+          <span>Task</span>
+      </button> <mat-divider></mat-divider>
+      <button mat-button class="menu-button" [routerLink]="['/login']">
+          <mat-icon>person</mat-icon>
+          <span>User</span>
+      </button> <mat-divider></mat-divider>
+       <button mat-button class="menu-button" [routerLink]="['/user']">
+          <mat-icon>badge</mat-icon>
+          <span>Employee</span>
+      </button> <mat-divider></mat-divider>
+       <button mat-button class="menu-button" [routerLink]="['/tender']">
+          <mat-icon>description</mat-icon>
+          <span>Tender</span>
+      </button> <mat-divider></mat-divider>
+       <button mat-button class="menu-button" [routerLink]="['/supplier']">
+          <mat-icon>shopping_cart</mat-icon>
+          <span>Supplier</span>
+      </button> <mat-divider></mat-divider>
+       <button mat-button class="menu-button" [routerLink]="['/order']">
+          <mat-icon>request_quote</mat-icon>
+          <span>Order</span>
+      </button> <mat-divider></mat-divider>
+       <button mat-button class="menu-button" [routerLink]="['/inventory']">
+          <mat-icon>inventory</mat-icon>
+          <span>Inventory</span>
+      </button> <mat-divider></mat-divider>
+       <button mat-button class="menu-button" [routerLink]="['/category']">
+          <mat-icon>category</mat-icon>
+          <span>Category</span>
+      </button> <mat-divider></mat-divider>
+       <button mat-button class="menu-button" [routerLink]="['/subcontractor']">
+          <mat-icon>engineering</mat-icon>
+          <span>Subcontractor</span>
+      </button> <mat-divider></mat-divider>
+       <button mat-button class="menu-button" [routerLink]="['/equipment']"> 
+          <mat-icon>hardware</mat-icon>
+          <span>Equipment</span>
+            </button> <mat-divider></mat-divider>
+       <button mat-button class="menu-button" [routerLink]="['/reports']">
+          <mat-icon>stacked_line_chart</mat-icon>
+          <span>Reports</span> 
+      </button> <mat-divider></mat-divider>
+      <button mat-button class="menu-button">
+          <mat-icon>help</mat-icon>
+          <span>Help</span>
+      </button>
+
+
+</mat-drawer>
+
+
+
+
+
+<div class="main-container">
+    <h1 class="title" style="margin-left: 50%; color: darkgoldenrod;">Employees</h1>
+    
+    
+    <div class="addbutton">
+      <a routerLink="/add-user">
+        <button class="btn btn-primary" type="submit" mat-flat-button click="add(i)" style="margin-left: 90%;">
+      Add Employee</button>
+    </a>
+    </div>
+
+  <br>
+
+    <div class="container  mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource">
+    
+      <ng-container matColumnDef="firstname">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let element"> {{element.firstname}} {{element.lastname}} </td>
+      </ng-container>
+    
+      <ng-container matColumnDef="email">
+        <th mat-header-cell *matHeaderCellDef> Email </th>
+        <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+      </ng-container>
+    
+      <ng-container matColumnDef="cellno">
+        <th mat-header-cell *matHeaderCellDef> Cellphone Number </th>
+        <td mat-cell *matCellDef="let element"> {{element.cellno}} </td>
+      </ng-container>
+    
+      <ng-container matColumnDef="emptype">
+        <th mat-header-cell *matHeaderCellDef>Employee Type</th>
+        <td mat-cell *matCellDef="let element"> {{element.emptype}} </td>
+      </ng-container>
+    
+    <ng-container matColumnDef="delete">
+      <th mat-header-cell *matHeaderCellDef>  </th>
+      <td mat-cell *matCellDef="let element; let i = index;">
+          <button mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+          
+            <mat-menu #menu="matMenu">
+              <!-- <button mat-menu-item (click)="openDialog()">
+                <mat-icon>description</mat-icon>
+                <span>View</span>
+              </button>             -->
+              
+              <button mat-menu-item (click)="edit(i)">
+                  <mat-icon>edit_note</mat-icon>
+                  <span>Edit</span>
+                </button>
+                
+              <button mat-menu-item (click)="removeAt(i)">
+                <mat-icon>delete</mat-icon>
+                <span>Delete</span> 
+              </button>
+            </mat-menu>
+    
+      </td>
+    </ng-container>
+    
+    
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    
+     
+    </table>
+    </div>
+     
+    </div> 
+    
+    <!-- 
+                                                       MODAL 
+    
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Confirm</h3>
+          </div>
+    
+          <div class="modal-body">
+            <p>Are you sure you want to delete this user?</p>
+          </div>
+    
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+            <button type="button" class="btn btn-primary">Yes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </body>
+    </html>  -->
+    

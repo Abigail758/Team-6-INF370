@@ -1,0 +1,67 @@
+<div class="addtender-container">
+    <form >
+      <h1 >Add Proposed Tender</h1>
+
+        <label>Company Name:</label><br>
+        <mat-form-field class="full-width" appearance="outline">
+          <input matInput  placeholder="Enter the company name" class="form-control"
+          >
+          <mat-hint></mat-hint>
+        </mat-form-field>
+        <br><br>
+
+        <label>Tender Description:</label><br>
+        <mat-form-field class="full-width" appearance="outline">
+          <textarea matInput placeholder="The tender is to..."
+          class="form-control"
+         ></textarea>
+
+        </mat-form-field>
+        <br><br>
+
+        <label>Tender Status:</label><br>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-select placeholder="Select task status" class="form-control"
+          >
+            <mat-option value="Submitted">Submitted</mat-option>
+            <mat-option value="Accepted">Accepted</mat-option>
+            <mat-option value="Declined">Declined</mat-option>
+            
+          </mat-select>
+          
+        </mat-form-field>
+        <br><br>
+
+       
+        <label>Tender Source:</label><br>
+        <mat-form-field class="full-width" appearance="outline">
+          <textarea matInput placeholder="The tender was found through..."
+          class="form-control"   
+        ></textarea>
+
+        </mat-form-field>
+        <br><br>
+
+        <label>Date Submitted:</label><br>
+        <mat-form-field appearance="outline" class="full-width">
+          <input matInput [matDatepicker]="picker1" placeholder="Select date tender was submitted"
+          class="form-control"
+          >
+          <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+          <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field>
+        <br><br>
+        
+      
+
+        <div class="button-flex-container">
+         
+          <button routerLink="/tender" class="btn btn-danger" type="submit" >Cancel</button>
+          &nbsp;&nbsp;
+          <button  class="btn btn-primary" (click)="submit()"> Add </button> 
+      
+        </div>
+
+    </form>
+
+</div>

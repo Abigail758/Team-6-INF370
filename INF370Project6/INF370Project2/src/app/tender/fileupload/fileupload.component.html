@@ -1,0 +1,83 @@
+<div class="tender-container">
+    
+      <h1 >Attach Tender documents</h1>
+      <div class="form-group">
+        <label>Comapny Name:</label><br>
+        <mat-form-field class="full-width" appearance="outline">
+          <input matInput  placeholder="Enter the company name" 
+          class="form-control"
+          >
+          <mat-hint></mat-hint>
+        </mat-form-field>
+        <br><br>
+       </div>
+        <label>Tender Description:</label><br>
+        <mat-form-field class="full-width" appearance="outline">
+          <textarea matInput placeholder="TThe tender is to..."
+          class="form-control" ></textarea>
+
+        </mat-form-field>
+        <br><br>
+        <div class="form-group"></div>
+        <label>Tender Status:</label><br>
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-select placeholder="Select tender status" class="form-control"
+         >
+            <mat-option value="Submitted">Submitted</mat-option>
+            <mat-option value="Accepted">Accepted</mat-option>
+            <mat-option value="Declined">Declined</mat-option>
+            
+          </mat-select>
+          
+        </mat-form-field>
+        <br><br>
+        <div class="form-group">
+        </div>
+        <label>Tender Source:</label><br>
+        <mat-form-field class="full-width" appearance="outline">
+          <textarea matInput placeholder="The tender was found through..."
+          class="form-control" ></textarea>
+
+        </mat-form-field>
+        </div>
+        <br><br>
+
+        <div class="form-group">
+        <label>Date Submitted:</label><br>
+        <mat-form-field appearance="outline" class="full-width">
+          <input matInput [matDatepicker]="picker1" placeholder="Select date tender was submitted"
+          class="form-control"  
+          >
+          <mat-datepicker-toggle ></mat-datepicker-toggle>
+          <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field>
+        </div>  
+        <br><br>
+        
+       
+
+      
+      <div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h3>Choose File</h3>            
+            <div class="form-group">
+                <input type="file" name="image" (change)="fileProgress($event)" />
+            </div>
+            <div *ngIf="fileUploadProgress">
+                Upload progress: {{ fileUploadProgress }}
+            </div>
+            <div class="image-preview mb-3" *ngIf="previewUrl">
+                <img [src]="previewUrl" height="300" />                 
+            </div>
+ 
+            <div class="mb-3" *ngIf="uploadedFilePath">
+                {{uploadedFilePath}}
+            </div>
+             
+            <div class="form-group">
+                <button class="btn btn-primary"  (click)="onSubmit()">Add documents</button>
+            </div>
+        </div>
+    </div>
+</div>

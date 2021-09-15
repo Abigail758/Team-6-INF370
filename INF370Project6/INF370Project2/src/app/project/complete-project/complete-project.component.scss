@@ -1,0 +1,47 @@
+h1{
+    color:darkgoldenrod;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 40px !important;
+    font-family: Arial, Helvetica, sans-serif,  !important;
+}
+
+
+h3{
+    color: deepskyblue;
+}
+
+label{
+    float: left;
+    width: 150px;
+}
+
+span{
+    display: block;
+    overflow: hidden;
+}
+
+select{
+    float:right;
+    width: 100%;
+}
+
+.panel-custom-width {
+    width: 150px !important;
+    height: 50px !important;
+    max-width: unset !important;
+    float: right;
+}
+
+.center-btn{
+    text-align: center;
+}
+
+.btn1 {
+    position: absolute;
+    top: 50%;
+}
+.btn2 {
+    position: absolute;
+    top: 50%;
+}

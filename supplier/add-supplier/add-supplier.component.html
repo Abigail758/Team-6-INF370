@@ -1,0 +1,88 @@
+<div class="addsupplier-container">
+    <form >
+      <h1 >Add Supplier</h1>
+
+        <label>Supplier Name:</label><br>
+        <mat-form-field class="full-width" appearance="outline">
+          <input matInput  placeholder="Enter the supplier name" class="form-control"
+          >
+          <mat-hint></mat-hint>
+        </mat-form-field>
+        <br><br>
+
+        <label>Supplier Email:</label><br>
+        <mat-form-field class="full-width" appearance="outline">
+          <textarea matInput placeholder="Enter the supplier email"
+          class="form-control"
+></textarea>
+
+        </mat-form-field>
+        <br><br>
+
+
+       
+        <label>Telephone number:</label><br>
+        <mat-form-field class="full-width" appearance="outline">
+          <input matInput placeholder="Enter the supplier number"  class="form-control"
+          >
+
+        </mat-form-field>
+        <br><br>
+
+          <label>Physical Address:</label><br>
+        <mat-form-field class="full-width" appearance="outline">
+          <input matInput placeholder="Enter the supplier's address"  class="form-control"
+          >
+
+        </mat-form-field>
+        <br><br>
+
+         <div class="mat-col-quarter">
+            <mat-form-field appearance="outline" class="control-w">
+                <mat-label>Supplier type</mat-label>
+                <mat-select formControlName="title">
+                  <mat-option value="Retail" (click)="openDialog()">Retail</mat-option>
+                  <mat-option value="Rental" (click)="openDialog()">Rental</mat-option>
+                   <mat-option value="Other" (click)="openDialog()">Other</mat-option>
+                </mat-select>
+                <mat-hint align="end">Supplier type</mat-hint>
+              </mat-form-field>
+        </div>
+
+        <div class="button-flex-container">
+         
+          <button routerLink="/supplier" class="btn btn-danger" >Cancel</button>
+          &nbsp;&nbsp;
+          <button class="btn btn-primary" (click)="submit()">       
+            Add 
+        </button> 
+      
+      </div>
+
+    </form>
+  </div>
+
+
+  <div>
+    <h1 mat-dialog-title>Add supplier type</h1>
+    <div mat-dialog-actions>
+      <button mat-button (click)="onNoClick()">Close</button>
+      <button mat-button [mat-dialog-close]="true">Add</button>
+    </div>
+</div>
+
+<div>
+    <h1 mat-dialog-title>View supplier type</h1>
+    <div mat-dialog-actions>
+      <button mat-button (click)="onNoClick()">Close</button>
+      <button mat-button [mat-dialog-close]="true" (click)="openDialog()">Update</button>
+    </div>
+</div>
+
+<div>
+    <h1 mat-dialog-title>Update supplier type</h1>
+    <div mat-dialog-actions>
+      <button mat-button (click)="onNoClick()">Close</button>
+      <button mat-button [mat-dialog-close]="true">Save</button>
+    </div>
+</div>
