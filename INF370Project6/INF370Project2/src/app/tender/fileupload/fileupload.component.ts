@@ -50,9 +50,9 @@ onSubmit() {
       reportProgress: true,
       observe: 'events'   
     })
-    .subscribe((event: { type: any; loaded: number; body: any; }) => {
+    .subscribe(event => {
       if(event.type === HttpEventType.UploadProgress) {
-        this.fileUploadProgress = Math.round(event.loaded / event.loaded * 100) + '%';
+        this.fileUploadProgress = Math.round(event.loaded / event.loaded  * 100) + '%';
         console.log(this.fileUploadProgress);
       } else if(event.type === HttpEventType.Response) {
         this.fileUploadProgress = '';

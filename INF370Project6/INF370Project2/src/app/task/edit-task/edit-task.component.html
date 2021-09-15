@@ -22,17 +22,15 @@
         <div class="form-group"></div>
         <label>Task Status:</label><br>
         <mat-form-field appearance="outline" class="full-width">
-          <mat-select placeholder="Select task status" class="form-control"
-          [(ngModel)]="project.Project_Status">
+          <mat-select placeholder="Select task status" class="form-control">
             <mat-option value="In Progress">In Progress</mat-option>
             <mat-option value="On-Hold">On-Hold</mat-option>
             <mat-option value="Completed">Completed</mat-option>
             <mat-option value="Cancelled">Canceled</mat-option>
             <mat-option value="Archived">Archived</mat-option>
-            
           </mat-select>
-          
         </mat-form-field>
+        
         <br><br>
         <div class="form-group">
         <label>Start Date:</label><br>
@@ -70,7 +68,7 @@
       
         <div class="button-flex-container">
          
-          <button routerLink="/task" class="btn btn-danger" (click)="goBack()">Cancel</button>
+          <button routerLink="/task" class="btn btn-danger" type="submit">Cancel</button>
           &nbsp;&nbsp;
           <button [disabled] class="btn btn-primary" (click)="submit()">Save</button> 
       

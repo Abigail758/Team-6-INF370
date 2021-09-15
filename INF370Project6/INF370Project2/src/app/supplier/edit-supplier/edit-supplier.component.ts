@@ -3,6 +3,7 @@ import { Supplier } from 'src/app/interface/supplier';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FormGroup, FormControl, Validators} from '@angular/forms';
 import { MainService } from 'src/app/service/main.service';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 
 
 

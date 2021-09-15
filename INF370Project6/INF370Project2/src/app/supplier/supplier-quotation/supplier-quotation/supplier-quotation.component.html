@@ -1,4 +1,4 @@
-<div class="container">
+<div class="quotation-container">
  <h1>Supplier Quotations</h1>
 
   <a href="#" routerlink="capturequotation" class="btn btn-primary">Capture Quotation</a>
@@ -32,21 +32,21 @@
                     <mat-icon>more_vert</mat-icon>
                 </button>
                 <mat-menu #menu="matMenu" xPosition="before">
-                <button mat-menu-item [routerLink]="['/supplierquotation/', 'requestquotation']" >Request Quotation</button>
+                <button mat-menu-item [routerLink]="['/requestquotation/']" >Request Quotation</button>
                 <button mat-menu-item mat-raised-button (click)="openDialog()">Accept Quotation</button>
                 </mat-menu>
             </td>
         </ng-container>
 
-        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        <tr mat-header-row *matHeaderRowDef=""></tr>
+        <tr mat-row *matRowDef="let row"></tr>
  </table>
 
   <div>
    <h1 mat-dialog-title>Accept Quotation?</h1>
     <div mat-dialog-actions>
       <button mat-button (click)="onNoClick()">Close</button>
-      <button mat-button [mat-dialog-close]="true">Accept</button>
+      <button mat-button (click)="submit()">Accept</button>
     </div>
   </div>
 

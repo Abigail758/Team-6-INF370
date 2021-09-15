@@ -4,7 +4,7 @@
       <div class="form-group">
         <label>Comapny Name:</label><br>
         <mat-form-field class="full-width" appearance="outline">
-          <input matInput  placeholder="Enter the company name" [(ngModel)]="tender.clientName"
+          <input matInput  placeholder="Enter the company name" 
           class="form-control"
           >
           <mat-hint></mat-hint>
@@ -14,8 +14,7 @@
         <label>Tender Description:</label><br>
         <mat-form-field class="full-width" appearance="outline">
           <textarea matInput placeholder="TThe tender is to..."
-          class="form-control"   [(ngModel)]="tender.tenderDescription"
-></textarea>
+          class="form-control" ></textarea>
 
         </mat-form-field>
         <br><br>
@@ -23,7 +22,7 @@
         <label>Tender Status:</label><br>
         <mat-form-field appearance="outline" class="full-width">
           <mat-select placeholder="Select tender status" class="form-control"
-          [(ngModel)]="project.Project_Status">
+         >
             <mat-option value="Submitted">Submitted</mat-option>
             <mat-option value="Accepted">Accepted</mat-option>
             <mat-option value="Declined">Declined</mat-option>
@@ -37,8 +36,7 @@
         <label>Tender Source:</label><br>
         <mat-form-field class="full-width" appearance="outline">
           <textarea matInput placeholder="The tender was found through..."
-          class="form-control"   [(ngModel)]="tender.tenderSource"
-></textarea>
+          class="form-control" ></textarea>
 
         </mat-form-field>
         </div>
@@ -48,9 +46,9 @@
         <label>Date Submitted:</label><br>
         <mat-form-field appearance="outline" class="full-width">
           <input matInput [matDatepicker]="picker1" placeholder="Select date tender was submitted"
-          class="form-control"  [(ngModel)]="task. endDate"
+          class="form-control"  
           >
-          <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+          <mat-datepicker-toggle ></mat-datepicker-toggle>
           <mat-datepicker #picker1></mat-datepicker>
         </mat-form-field>
         </div>  

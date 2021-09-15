@@ -67,7 +67,7 @@
     <h1 mat-dialog-title>Add supplier type</h1>
     <div mat-dialog-actions>
       <button mat-button (click)="onNoClick()">Close</button>
-      <button mat-button [mat-dialog-close]="true">Add</button>
+      <button mat-button  (click)="submit()">Add</button>
     </div>
 </div>
 
@@ -75,7 +75,7 @@
     <h1 mat-dialog-title>View supplier type</h1>
     <div mat-dialog-actions>
       <button mat-button (click)="onNoClick()">Close</button>
-      <button mat-button [mat-dialog-close]="true" (click)="openDialog()">Update</button>
+      <button mat-button (click)="openDialog()">Update</button>
     </div>
 </div>
 
@@ -83,6 +83,6 @@
     <h1 mat-dialog-title>Update supplier type</h1>
     <div mat-dialog-actions>
       <button mat-button (click)="onNoClick()">Close</button>
-      <button mat-button [mat-dialog-close]="true">Save</button>
+      <button mat-button  (click)="submit()">Save</button>
     </div>
 </div>

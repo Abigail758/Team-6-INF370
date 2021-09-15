@@ -4,7 +4,7 @@ import { Supplier } from 'src/app/interface/supplier';
 import { AbstractControlOptions, FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatDialog } from '@angular/material/dialog';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 
 
 
@@ -32,7 +32,7 @@ export class SupplierComponent implements OnInit {
   
   deleteSupplier(id: number){
     this.mainService.deleteSupplier(id).subscribe(res => {
-         this.supplier = this.supplier.filter(item => item.id !== id);
+         this.supplier = this.supplier.filter(item => item.supplierid !== id);
          console.log('Supplier deleted successfully!');
     })
   }

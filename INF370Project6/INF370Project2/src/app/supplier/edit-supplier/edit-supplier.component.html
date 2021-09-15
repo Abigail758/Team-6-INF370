@@ -15,7 +15,7 @@
         <mat-form-field class="full-width" appearance="outline">
           <textarea matInput placeholder="The supplier's email"
           class="form-control"   [(ngModel)]="supplier.supplierEmail"
-></textarea>
+           ></textarea>
 
         <br><br>
 
@@ -27,7 +27,7 @@
           <input matInput placeholder="Enter the supplier's number"  class="form-control"  [(ngModel)]="supplier.supplierTelephone"
           >
         </mat-form-field>
-    </div>
+        </div>
         <br><br>
 
 
@@ -37,18 +37,24 @@
           <input matInput placeholder="Enter the supplier's address"  class="form-control"  [(ngModel)]="supplier.supplierAddress"
           >
         </mat-form-field>
-    </div>
+        </div>
         <br><br>
 
       
         <div class="button-flex-container">
          
-          <button routerLink="/task" class="btn btn-danger" type="submit">Cancel</button>
+          <button routerLink="/task" class="btn btn-danger" type="submit" (click)="onNoClick()">Cancel</button>
           &nbsp;&nbsp;
           <button [disabled] class="btn btn-primary" (click)="submit()">Save</button> 
       
-      </div>
+        </div>
 
     
-  </div>
+        
+  
+
+
+
+    
+  
 

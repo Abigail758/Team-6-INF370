@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { AbstractControlOptions, FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MainService } from 'src/app/service/main.service';
+import { Quotation } from 'src/app/interface/quotation';
 
 export interface DialogData {
   accept: string;
@@ -19,8 +24,13 @@ export class SupplierQuotationComponent implements OnInit {
   accept!: string;
   decline!: string;
   dialogRef: any;
+  form!: FormGroup;
 
-  constructor(public dialog: MatDialog) {}
+  constructor(
+    public dialog: MatDialog,
+    public mainService: MainService,
+    private router: Router
+    ) {}
 
   openDialog(): void {
     const dialogRef = this.dialog.open(SupplierQuotationComponent, {
@@ -41,5 +51,14 @@ export class SupplierQuotationComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  submit(){
+    console.log(this.form.value);
+    this.mainService.createQoutation(this.form.value).subscribe(res => {
+         console.log('Supplier quotation added successfully!');
+         this.router.navigateByUrl('supplier');
+    });
+
+  }
 
 }

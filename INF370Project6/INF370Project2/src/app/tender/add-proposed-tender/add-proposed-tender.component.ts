@@ -26,7 +26,8 @@ export class AddProposedTenderComponent implements OnInit {
       clientName: new FormControl('', [Validators.required]),
       tenderDescription: new FormControl('', [Validators.required]),
       dateSubmitted: new FormControl('', Validators.required),
-      tenderStatus: new FormControl('', Validators.required)
+      tenderStatus: new FormControl('', Validators.required),
+      tenderSource: new FormControl ('', Validators.required)
     });
   }
 
