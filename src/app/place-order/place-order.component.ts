@@ -18,11 +18,15 @@ export class PlaceOrderComponent implements OnInit {
     supplier_id: 1,
     Supplier_Name: "SHoprite"
   }];
-  inventories: any[] = [{
-    inventory_id: 1,
-    inventory_Name: "cement"
+
+  Projects: any[] = [{
+    Project_ID: 1,
+    Project_Name: "SHoprite"
   }];
-  updateStatus: boolean = false;
+
+
+  inventories: any[] = [];
+  updateStatus: boolean = true;
   file: File = null;
 
   constructor( private formBuilder: FormBuilder,
@@ -32,18 +36,32 @@ export class PlaceOrderComponent implements OnInit {
     ) {
 
     this.orderForm = this.formBuilder.group({
-      supplier_id : ['', Validators.required],
-      Inventory_id : ['', Validators.required],
+      Supplier_ID : ['', Validators.required],
+      Order_Items : ['', Validators.required],
       Quantity : ['', Validators.required],
-      Price: ['', Validators.required],
+      Total_Cost: ['', Validators.required],
+      Project_ID: ['', Validators.required],
       ReceivedStatus: ['',],
       Proof: ['', ],
     });
    }
 
   ngOnInit(): void {
+    this.loadAllInventory();
 this.update()
   }
+
+
+  loadAllInventory() {
+    this.apiService.getAllInventory().subscribe(inv=>{
+      console.log('before in inv', inv)
+      this.inventories = inv;
+
+      });
+      console.log('inv', this.inventories)
+      return this.inventories;
+
+    }
 
   creationSuccess() {
     this.modalService.open(this.success,{ centered: true });
@@ -90,16 +108,14 @@ console.log('status', this.updateStatus)
     if(this.file != null){
     this.onUpload();}
     var newOrder =this.orderForm.value;
-    console.log('in placeorder',newOrder);
-    this.apiService.createOrder(newOrder);
     console.log(newOrder);
-    this.router.navigate(["/stock-taking"]);
-    // this.apiService.createInventory(newOrder).subscribe((data: any[])=>{
-    //   this.router.navigate(["/orders"]);
-    //   this.modalService.dismissAll();
-    //   this.creationSuccess();
-    // })
+     this.apiService.createOrder(newOrder).subscribe((data: any[])=>{
+       this.router.navigate(["/orders"]);
+       this.modalService.dismissAll();
+       this.creationSuccess();
+   })
   }
+
 
 
 

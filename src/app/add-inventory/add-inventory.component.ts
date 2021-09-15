@@ -15,7 +15,7 @@ export class AddInventoryComponent implements OnInit {
   @ViewChild('success') success : any;
 
   inventoryForm: any;
-  categories: any[];
+  categories=[];
 
   constructor
   (
@@ -27,9 +27,8 @@ export class AddInventoryComponent implements OnInit {
     )
     {
       this.inventoryForm = this.formBuilder.group({
-        Inv_Name : ['', Validators.required],
-        Quantity : ['', Validators.required],
-        Category_Id: ['', Validators.required],
+        Inventory_Name : ['', Validators.required],
+        Category_ID: ['', Validators.required],
       });
 
 
@@ -49,6 +48,7 @@ export class AddInventoryComponent implements OnInit {
 
   createInventory(){
     var newInventory =this.inventoryForm.value;
+    console.log('create inventory',newInventory)
     this.apiService.createInventory(newInventory).subscribe((data: any[])=>{
       this.router.navigate(["/inventory"]);
       this.modalService.dismissAll();
@@ -58,10 +58,12 @@ export class AddInventoryComponent implements OnInit {
 
 
   loadAllCategories() {
-  let categories = this.apiService.getAllCategories()//.subscribe(categories=>{
+   this.apiService.getAllCategories().subscribe(categories=>{
      this.categories = categories;
    console.log(categories)
-    // });
+     });
+
+     return this.categories;
 
    }
 }

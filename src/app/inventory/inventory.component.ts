@@ -14,29 +14,41 @@ export class InventoryComponent implements OnInit {
   inventory=[];
   keywords='';
   constructor
-  (    
+  (
     private apiService:ApiService,
     private modalService: NgbModal,
     private router: Router,
-    
-  )    
+
+  )
   { }
 
-  
+
   ngOnInit(): void {
     this.loadAllInventory()
   }
-  loadAllInventory() { 
+  loadAllInventory() {
     this.apiService.getAllInventory().subscribe(inventory=>{
      this.inventory = inventory;
    console.log(inventory)
-     });  
-   } 
-   
+     });
+   }
+
    confirmDelete(id){
     sessionStorage.setItem('deleteInventoryID',id.toString());
     this.modalService.open(this.confirmDeletion,{ centered: true});
 
+  }
+
+  updateInventory(id)
+  {
+    sessionStorage.setItem('updateInventoryID',id);
+    this.router.navigate(["/update-inventory"]);
+  }
+
+  stockTake(id)
+  {
+    sessionStorage.setItem('InventoryID',id);
+    this.router.navigate(["/stocktake"]);
   }
 
   deleteInventory(){
@@ -45,9 +57,11 @@ export class InventoryComponent implements OnInit {
       this.loadAllInventory();
       sessionStorage.removeItem('deleteInventoryID');
       this.modalService.open(this.success,{ centered: true});
-     
+
 });
 
   }
+
+
 
 }

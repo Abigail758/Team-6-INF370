@@ -14,6 +14,8 @@ export class StockTakingComponent implements OnInit {
 
   order=[];
   keywords='';
+  inventory= [];
+
 
   constructor(
     private apiService:ApiService,
@@ -29,12 +31,11 @@ export class StockTakingComponent implements OnInit {
 
 
   loadAllOrders() {
-    this.order=  this.apiService.getAllOrders()
-    console.log('stocktakings', this.order);
-     //.subscribe(inventory=>{
-   //    this.inventory = inventory;
-   //  console.log(inventory)
-   //    });
+     this.apiService.getAllOrders()
+     .subscribe(inventory=>{
+       this.inventory = inventory;
+     console.log(inventory)
+      });
     }
 
     confirmInventory() {
@@ -42,16 +43,16 @@ export class StockTakingComponent implements OnInit {
     }
 
     updateOrder(item) {
-     this.order=  this.apiService.getAllOrders()
+   this.apiService.getAllOrders()
      console.log('this is get orders', this.order);
      this.apiService.updateOrder(item)
-this.confirmInventory();
+//this.confirmInventory();
    //  this.router.navigate(["/place-order"])
 
-      //.subscribe(inventory=>{
-    //    this.inventory = inventory;
-    //  console.log(inventory)
-    //    });
+      .subscribe(inventory=>{
+        this.inventory = inventory;
+      console.log(inventory)
+       });
      }
 
 }

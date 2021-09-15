@@ -31,8 +31,10 @@
             <tr>
                 <th>ID</th>
                 <th>Inventory Name</th>
-                <th>Quantity</th>
-                <th>Assign</th>
+                <th>Quantity Recordered</th>
+                <th>Quantity Counted</th>
+                <th>Stock-take</th>
+                <th>Update</th>
                 <th>Delete</th>
 
             </tr>
@@ -40,12 +42,15 @@
 
 
         <tr *ngFor="let item of inventory |filter:keywords">
-            <td [innerHTML]="item.Inventory_Id | highlight:keywords"></td>
-            <td [innerHTML]="item.Inv_Name | highlight:keywords"></td>
+            <td [innerHTML]="item.Inventory_ID | highlight:keywords"></td>
+            <td [innerHTML]="item.Inventory_Name | highlight:keywords"></td>
             <td [innerHTML]="item.Quantity | highlight:keywords"></td>
-            <td> <button type="button" class="btn btn-primary" (click)="assignInventory(item.Inventory_Id)"><mat-icon>assignment</mat-icon></button>
+            <td [innerHTML]="item.Quantity | highlight:keywords"></td>
+            <td> <button type="button" class="btn btn-primary" (click)="stockTake(item.Inventory_ID)"><mat-icon>sticky_note_2</mat-icon></button>
             </td>
-            <td> <button type="button" class="btn btn-danger" (click)="confirmDelete(item.Inventory_Id)"><mat-icon>delete</mat-icon></button>
+            <td> <button type="button" class="btn btn-primary" (click)="updateInventory(item.Inventory_ID)"><mat-icon>edit</mat-icon></button>
+            </td>
+            <td> <button type="button" class="btn btn-danger" (click)="confirmDelete(item.Inventory_ID)"><mat-icon>delete</mat-icon></button>
             </td>
         </tr>
 

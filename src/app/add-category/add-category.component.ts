@@ -50,12 +50,12 @@ export class AddCategoryComponent implements OnInit {
     var newCategory =this.categoryForm.value;
     newCategory.Category_Id = '1';
     console.log('inside create category before',newCategory)
-    this.apiService.createCategory(newCategory)//.subscribe((data: any[])=>{
-     // console.log('inside create category',data)
+    this.apiService.createCategory(newCategory).subscribe((data: any[])=>{
+      console.log('inside create category',data)
       this.router.navigate(["/category"]);
       this.modalService.dismissAll();
       this.creationSuccess();
-  //  })
+    })
   }
 
 }

@@ -19,14 +19,14 @@
                 <div class="input-group-prepend">
                     <span class="input-group-text">Item Name:</span>
                 </div>
-                <input type="text" formControlName="Inv_Name" class="form-control">
+                <input type="text" formControlName="Inventory_Name" class="form-control">
             </div>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text">Category:</span>
                 </div>
-                <select class="form-control" formControlName="Category_Id">
-                    <option *ngFor="let category of categories" value="{{category.Category_Id}}">{{category.Category_Name}}</option>
+                <select class="form-control" formControlName="Category_ID">
+                    <option *ngFor="let category of categories" value="{{category.Category_ID}}">{{category.Category_Name}}</option>
 
                   </select>
 

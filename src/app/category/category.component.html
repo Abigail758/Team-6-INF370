@@ -40,17 +40,17 @@
 
 
         <tr *ngFor="let category of categories |filter:keywords">
-            <td [innerHTML]="category.Category_Id | highlight:keywords"></td>
+            <td [innerHTML]="category.Category_ID | highlight:keywords"></td>
             <td [innerHTML]="category.Category_Name | highlight:keywords"></td>
             <td [innerHTML]="category.Category_Description | highlight:keywords"></td>
 
             <!-- <td>{{category.Category_Name}}</td>
             <td>{{category.Category_Description}}</td> -->
             <td>
-                <button type="button" class="btn btn-primary" (click)="updateCategory(category.Category_Id)"><mat-icon>edit</mat-icon></button>
+                <button type="button" class="btn btn-primary" (click)="updateCategory(category.Category_ID)"><mat-icon>edit</mat-icon></button>
             </td>
             <td>
-                <button type="button" class="btn btn-danger" (click)="confirmDelete(category.Category_Id)"><mat-icon>delete</mat-icon></button>
+                <button type="button" class="btn btn-danger" (click)="confirmDelete(category.Category_ID)"><mat-icon>delete</mat-icon></button>
             </td>
         </tr>
 

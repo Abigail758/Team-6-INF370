@@ -47,6 +47,8 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { HighlightPipe } from './highlight.pipe';
 import { StockTakingComponent } from './stock-taking/stock-taking.component';
 import { PlaceOrderComponent } from './place-order/place-order.component';
+import { UpdateInventoryComponent } from './update-inventory/update-inventory.component';
+import { StockTakeComponent } from './stock-take/stock-take.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +63,8 @@ import { PlaceOrderComponent } from './place-order/place-order.component';
     HighlightPipe,
     StockTakingComponent,
     PlaceOrderComponent,
+    UpdateInventoryComponent,
+    StockTakeComponent,
    ],
   imports: [
     BrowserModule,

@@ -21,11 +21,21 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text">Supplier:</span>
                         </div>
-                        <select class="form-control" formControlName="supplier_id">
+                        <select class="form-control" formControlName="Supplier_ID">
                             <option *ngFor="let supplier of suppliers" value="{{supplier.supplier_id}}">{{supplier.Supplier_Name}}</option>
 
                           </select>
                     </div>
+
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text"> Project ID:</span>
+                      </div>
+                      <select class="form-control" formControlName="Project_ID">
+                        <option *ngFor="let project of Projects" value="{{project.Project_ID}}">{{project.Project_Name}}</option>
+
+                      </select>
+                  </div>
 
                 </div>
                 <div class="col-5">
@@ -33,8 +43,8 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text"> Item Name:</span>
                         </div>
-                        <select class="form-control" formControlName="Inventory_id">
-                          <option *ngFor="let inventory of inventories" value="{{inventory.inventory_id}}">{{inventory.inventory_Name}}</option>
+                        <select class="form-control" formControlName="Order_Items">
+                          <option *ngFor="let inventory of inventories" value="{{inventory.Inventory_ID}}">{{inventory.Inventory_Name}}</option>
 
                         </select>
                     </div>
@@ -50,7 +60,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text"> Quoted Price:</span>
                         </div>
-                        <input type="number" class="form-control"  formControlName="Price">
+                        <input type="number" class="form-control"  formControlName="Total_Cost">
 
 
                     </div>
