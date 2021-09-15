@@ -5,7 +5,9 @@ import { TaskService } from '../services/task.service';
 import { Task } from 'src/app/interfaces/taskIndex';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
-import { id } from '@swimlane/ngx-charts';
+//import { id } from '@swimlane/ngx-charts';
+
+import { MatMenuModule } from '@angular/material/menu';
 
 @Component({
   templateUrl: './task.component.html',
