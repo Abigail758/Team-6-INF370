@@ -13,18 +13,8 @@ import { ReportsComponent } from './reports/reports/reports.component';
 import { InventoryreportComponent } from './reports/inventoryreport/inventoryreport.component';
 import { SubcontractorreportComponent } from './reports/subcontractorreport/subcontractorreport.component';
 import { AddupdateproComponent } from './project/addupdatepro/addupdatepro.component';
-import { TaskComponent } from './task/task/task.component';
-import { AddTaskComponent } from './task/add-task/add-task.component';
-import { EditTaskComponent } from './task/edit-task/edit-task.component';
-import { ViewTaskComponent } from './task/view-task/view-task.component';
-import { TenderComponent } from './tender/tender/tender.component';
-import { AddProposedTenderComponent } from './tender/add-proposed-tender/add-proposed-tender.component';
-import { FileuploadComponent } from './tender/fileupload/fileupload.component';
-import { SupplierComponent } from './supplier/supplier/supplier.component';
-import { AddSupplierComponent } from './supplier/add-supplier/add-supplier.component';
-import { EditSupplierComponent } from './supplier/edit-supplier/edit-supplier.component';
-import { ViewSupplierComponent } from './supplier/view-supplier/view-supplier.component';
-import { RequestQuotationComponent } from './supplier/request-quotation/request-quotation.component';
+
+
 import { PhaseComponent } from './phase/phase/phase.component';
 import { AddPhaseComponent } from './phase/add-phase/add-phase.component';
 import { ViewPhaseComponent } from './phase/view-phase/view-phase.component';
@@ -68,21 +58,21 @@ const routes: Routes = [
 {path: 'expensereport',component: ExpensereportComponent,},
 {path: 'subcontractorreport',component: SubcontractorreportComponent,},
 
-{path: 'task',component: TaskComponent,},
-{path: 'add-task',component: AddTaskComponent,},
-{path: 'edit-task',component: EditTaskComponent,},
-{path: 'view-task',component: ViewTaskComponent,},
+// {path: 'task',component: TaskComponent,},
+// {path: 'add-task',component: AddTaskComponent,},
+// {path: 'edit-task',component: EditTaskComponent,},
+// {path: 'view-task',component: ViewTaskComponent,},
 
-{path: 'tender',component: TenderComponent,},
-{path: 'add-proposed-tender',component: AddProposedTenderComponent,},
-{path: 'edit-task',component: EditTaskComponent,},
-{path: 'fileupload',component: FileuploadComponent,},
+// {path: 'tender',component: TenderComponent,},
+// {path: 'add-proposed-tender',component: AddProposedTenderComponent,},
+// {path: 'edit-task',component: EditTaskComponent,},
+// {path: 'fileupload',component: FileuploadComponent,},
 
-{path: 'supplier',component: SupplierComponent,},
-{path: 'add-supplier',component: AddSupplierComponent,},
-{path: 'edit-supplier',component: EditSupplierComponent,},
-{path: 'view-supplier',component: ViewSupplierComponent,},
-{path: 'request-quotation',component: RequestQuotationComponent,},
+// {path: 'supplier',component: SupplierComponent,},
+// {path: 'add-supplier',component: AddSupplierComponent,},
+// {path: 'edit-supplier',component: EditSupplierComponent,},
+// {path: 'view-supplier',component: ViewSupplierComponent,},
+// {path: 'request-quotation',component: RequestQuotationComponent,},
 
 {path: 'phase',component: PhaseComponent,},
 {path: 'add-phase',component: AddPhaseComponent,},
