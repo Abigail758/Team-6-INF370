@@ -1,0 +1,41 @@
+<p>
+  <mat-toolbar>
+      <span class="blue">Inventory</span>
+  </mat-toolbar>
+</p>
+
+<div class="content container">
+
+  <div class="row">
+    <h3>Date last captured Quantity: </h3>
+</div>
+
+  <div class="row">
+      <h3>Please enter Stock-take information</h3>
+  </div>
+
+  <div class="row">
+      <form [formGroup]="stocktakingForm">
+          <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                  <span class="input-group-text">Inventory Quantity:</span>
+              </div>
+              <input type="text" formControlName="Quantity" class="form-control">
+          </div>
+
+          <div class="row">
+              <div class="col-6">
+                  <button type="button" class="btn btn-primary" (click)="SaveStocktaking()" [disabled]='!stocktakingForm.valid'>Save</button>
+              </div>
+              <div class="col-6 ">
+                  <button type="button" class="btn btn-danger float-right" routerLink="/inventory">Cancel</button>
+              </div>
+          </div>
+      </form>
+
+  </div>
+
+
+
+
+</div>
