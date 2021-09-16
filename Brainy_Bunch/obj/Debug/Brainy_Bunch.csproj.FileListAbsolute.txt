@@ -1,0 +1,250 @@
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Brainy_Bunch.dll.config
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Brainy_Bunch.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Brainy_Bunch.pdb
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\csc.exe
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\csc.exe.config
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\csc.rsp
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\csi.exe
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\csi.exe.config
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\csi.rsp
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.AppContext.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Console.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.IO.Compression.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Net.Http.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Net.Sockets.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.ValueTuple.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Xml.XPath.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\vbc.exe
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\vbc.exe.config
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\vbc.rsp
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\VBCSCompiler.exe
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Antlr3.Runtime.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\EntityFramework.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Newtonsoft.Json.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Net.Http.Formatting.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Web.Helpers.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Web.Http.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Web.Http.WebHost.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Web.Mvc.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Web.Optimization.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Web.Razor.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Web.WebPages.Deployment.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Web.WebPages.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Web.WebPages.Razor.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\WebGrease.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\EntityFramework.xml
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Newtonsoft.Json.xml
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Net.Http.Formatting.xml
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Web.Helpers.xml
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Web.Http.xml
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Web.Http.WebHost.xml
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Web.Mvc.xml
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Web.Optimization.xml
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Web.Razor.xml
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Web.WebPages.xml
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Web.WebPages.Deployment.xml
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Web.WebPages.Razor.xml
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Antlr3.Runtime.pdb
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\obj\Debug\Brainy_Bunch.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\obj\Debug\Brainy_Bunch.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\obj\Debug\Brainy_Bunch.csproj.CopyComplete
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\obj\Debug\Brainy_Bunch.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\obj\Debug\Brainy_Bunch.pdb
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.AspNetCore.Cors.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.Extensions.Options.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.Net.Http.Headers.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Buffers.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.ComponentModel.Annotations.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Memory.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Numerics.Vectors.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Text.Encodings.Web.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Web.Cors.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Web.Http.Cors.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.AspNetCore.Cors.xml
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.AspNetCore.Http.Extensions.xml
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.Extensions.Options.xml
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.Net.Http.Headers.xml
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Buffers.xml
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Memory.xml
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Numerics.Vectors.xml
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Text.Encodings.Web.xml
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\System.Web.Http.Cors.xml
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\EntityFramework.SqlServer.dll
+C:\Users\User\source\repos\Brainy_Bunch\Brainy_Bunch\bin\EntityFramework.SqlServer.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Brainy_Bunch.dll.config
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Brainy_Bunch.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Brainy_Bunch.pdb
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\csc.exe
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\csc.exe.config
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\csc.rsp
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\csi.exe
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\csi.exe.config
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\csi.rsp
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.AppContext.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Console.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.IO.Compression.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Net.Http.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.ValueTuple.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\vbc.exe
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\vbc.exe.config
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\vbc.rsp
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\VBCSCompiler.exe
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Antlr3.Runtime.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\EntityFramework.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\EntityFramework.SqlServer.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.AspNetCore.Cors.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.Extensions.Options.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.Net.Http.Headers.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Newtonsoft.Json.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Buffers.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.ComponentModel.Annotations.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Memory.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Net.Http.Formatting.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Numerics.Vectors.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Text.Encodings.Web.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Web.Cors.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Web.Helpers.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Web.Http.Cors.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Web.Http.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Web.Http.WebHost.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Web.Mvc.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Web.Optimization.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Web.Razor.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Web.WebPages.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Web.WebPages.Razor.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\WebGrease.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\EntityFramework.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\EntityFramework.SqlServer.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.AspNetCore.Cors.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.AspNetCore.Http.Extensions.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.AspNetCore.Http.Features.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.Extensions.Options.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.Net.Http.Headers.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Buffers.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Memory.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Numerics.Vectors.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Text.Encodings.Web.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Web.Http.Cors.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Newtonsoft.Json.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Net.Http.Formatting.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Web.Helpers.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Web.Http.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Web.Http.WebHost.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Web.Mvc.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Web.Optimization.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Web.Razor.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Web.WebPages.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\System.Web.WebPages.Razor.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Antlr3.Runtime.pdb
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\obj\Debug\Brainy_Bunch.csprojAssemblyReference.cache
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\obj\Debug\Brainy_Bunch.csproj.CoreCompileInputs.cache
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\obj\Debug\Brainy_Bunch.csproj.CopyComplete
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\obj\Debug\Brainy_Bunch.dll
+C:\Users\Gugu Tshabalala\Downloads\temp brainy project\temp brainy project\Brainy_Bunch\Brainy_Bunch\obj\Debug\Brainy_Bunch.pdb

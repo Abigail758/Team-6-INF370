@@ -1,0 +1,2711 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Gabriq_System_DatabaseModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="Gabriq_System_DatabaseModelStoreContainer">
+    <EntitySet Name="Categories" EntityType="Gabriq_System_DatabaseModel.Store.Categories" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Checkout_Checkin" EntityType="Gabriq_System_DatabaseModel.Store.Checkout_Checkin" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Checkout_Checkin_Date" EntityType="Gabriq_System_DatabaseModel.Store.Checkout_Checkin_Date" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Clients" EntityType="Gabriq_System_DatabaseModel.Store.Clients" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Employees" EntityType="Gabriq_System_DatabaseModel.Store.Employees" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Employee_Task" EntityType="Gabriq_System_DatabaseModel.Store.Employee_Task" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Employee_Type" EntityType="Gabriq_System_DatabaseModel.Store.Employee_Type" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Equipments" EntityType="Gabriq_System_DatabaseModel.Store.Equipments" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Inventories" EntityType="Gabriq_System_DatabaseModel.Store.Inventories" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Inventory_On_Hand" EntityType="Gabriq_System_DatabaseModel.Store.Inventory_On_Hand" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Order_Status" EntityType="Gabriq_System_DatabaseModel.Store.Order_Status" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Orderlines" EntityType="Gabriq_System_DatabaseModel.Store.Orderlines" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Password_History" EntityType="Gabriq_System_DatabaseModel.Store.Password_History" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Payment_Type" EntityType="Gabriq_System_DatabaseModel.Store.Payment_Type" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Phases" EntityType="Gabriq_System_DatabaseModel.Store.Phases" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Phase_Inventory" EntityType="Gabriq_System_DatabaseModel.Store.Phase_Inventory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Phase_Status" EntityType="Gabriq_System_DatabaseModel.Store.Phase_Status" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Projects" EntityType="Gabriq_System_DatabaseModel.Store.Projects" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Project_Status" EntityType="Gabriq_System_DatabaseModel.Store.Project_Status" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Rentals" EntityType="Gabriq_System_DatabaseModel.Store.Rentals" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Rental_Line" EntityType="Gabriq_System_DatabaseModel.Store.Rental_Line" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Rental_Request" EntityType="Gabriq_System_DatabaseModel.Store.Rental_Request" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Rental_Request_Status" EntityType="Gabriq_System_DatabaseModel.Store.Rental_Request_Status" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Rental_Status" EntityType="Gabriq_System_DatabaseModel.Store.Rental_Status" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Subcontractors" EntityType="Gabriq_System_DatabaseModel.Store.Subcontractors" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Subcontractor_Phase" EntityType="Gabriq_System_DatabaseModel.Store.Subcontractor_Phase" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Suppliers" EntityType="Gabriq_System_DatabaseModel.Store.Suppliers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Supplier_Order" EntityType="Gabriq_System_DatabaseModel.Store.Supplier_Order" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Supplier_Request" EntityType="Gabriq_System_DatabaseModel.Store.Supplier_Request" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Supplier_Request_Status" EntityType="Gabriq_System_DatabaseModel.Store.Supplier_Request_Status" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Supplier_Type" EntityType="Gabriq_System_DatabaseModel.Store.Supplier_Type" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="Gabriq_System_DatabaseModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tasks" EntityType="Gabriq_System_DatabaseModel.Store.Tasks" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Task_Status" EntityType="Gabriq_System_DatabaseModel.Store.Task_Status" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tasks_Equipment" EntityType="Gabriq_System_DatabaseModel.Store.Tasks_Equipment" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tenders" EntityType="Gabriq_System_DatabaseModel.Store.Tenders" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tender_Request" EntityType="Gabriq_System_DatabaseModel.Store.Tender_Request" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tender_Request_Status" EntityType="Gabriq_System_DatabaseModel.Store.Tender_Request_Status" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tender_Status" EntityType="Gabriq_System_DatabaseModel.Store.Tender_Status" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Users" EntityType="Gabriq_System_DatabaseModel.Store.Users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="User_Role" EntityType="Gabriq_System_DatabaseModel.Store.User_Role" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="WriteOff_Inventory" EntityType="Gabriq_System_DatabaseModel.Store.WriteOff_Inventory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Category1" EntityType="Gabriq_System_DatabaseModel.Store.Category1" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Checkout_Checkin1" EntityType="Gabriq_System_DatabaseModel.Store.Checkout_Checkin1" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Checkout_Checkin_Date1" EntityType="Gabriq_System_DatabaseModel.Store.Checkout_Checkin_Date1" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Client1" EntityType="Gabriq_System_DatabaseModel.Store.Client1" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Employee1" EntityType="Gabriq_System_DatabaseModel.Store.Employee1" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Equipment1" EntityType="Gabriq_System_DatabaseModel.Store.Equipment1" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Inventory1" EntityType="Gabriq_System_DatabaseModel.Store.Inventory1" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Orderline1" EntityType="Gabriq_System_DatabaseModel.Store.Orderline1" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Phase1" EntityType="Gabriq_System_DatabaseModel.Store.Phase1" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Project1" EntityType="Gabriq_System_DatabaseModel.Store.Project1" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Rental1" EntityType="Gabriq_System_DatabaseModel.Store.Rental1" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Subcontractor1" EntityType="Gabriq_System_DatabaseModel.Store.Subcontractor1" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Supplier1" EntityType="Gabriq_System_DatabaseModel.Store.Supplier1" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Task1" EntityType="Gabriq_System_DatabaseModel.Store.Task1" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tender1" EntityType="Gabriq_System_DatabaseModel.Store.Tender1" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="User1" EntityType="Gabriq_System_DatabaseModel.Store.User1" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Category2" EntityType="Gabriq_System_DatabaseModel.Store.Category2" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Checkout_Checkin2" EntityType="Gabriq_System_DatabaseModel.Store.Checkout_Checkin2" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Checkout_Checkin_Date2" EntityType="Gabriq_System_DatabaseModel.Store.Checkout_Checkin_Date2" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Client2" EntityType="Gabriq_System_DatabaseModel.Store.Client2" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Employee2" EntityType="Gabriq_System_DatabaseModel.Store.Employee2" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Equipment2" EntityType="Gabriq_System_DatabaseModel.Store.Equipment2" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Inventory2" EntityType="Gabriq_System_DatabaseModel.Store.Inventory2" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Orderline2" EntityType="Gabriq_System_DatabaseModel.Store.Orderline2" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Phase2" EntityType="Gabriq_System_DatabaseModel.Store.Phase2" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Project2" EntityType="Gabriq_System_DatabaseModel.Store.Project2" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Rental2" EntityType="Gabriq_System_DatabaseModel.Store.Rental2" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Subcontractor2" EntityType="Gabriq_System_DatabaseModel.Store.Subcontractor2" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Supplier2" EntityType="Gabriq_System_DatabaseModel.Store.Supplier2" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Task2" EntityType="Gabriq_System_DatabaseModel.Store.Task2" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Tender2" EntityType="Gabriq_System_DatabaseModel.Store.Tender2" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="User2" EntityType="Gabriq_System_DatabaseModel.Store.User2" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Inventory_Category" Association="Gabriq_System_DatabaseModel.Store.FK_Inventory_Category">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="Inventory" EntitySet="Inventories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Checkout_Checkin_Date_Checkout_Checkin" Association="Gabriq_System_DatabaseModel.Store.FK_Checkout_Checkin_Date_Checkout_Checkin">
+      <End Role="Checkout_Checkin" EntitySet="Checkout_Checkin" />
+      <End Role="Checkout_Checkin_Date" EntitySet="Checkout_Checkin_Date" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Checkout_Checkin_Date_Tasks_Equipment" Association="Gabriq_System_DatabaseModel.Store.FK_Checkout_Checkin_Date_Tasks_Equipment">
+      <End Role="Tasks_Equipment" EntitySet="Tasks_Equipment" />
+      <End Role="Checkout_Checkin_Date" EntitySet="Checkout_Checkin_Date" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tender_Request_Client" Association="Gabriq_System_DatabaseModel.Store.FK_Tender_Request_Client">
+      <End Role="Client" EntitySet="Clients" />
+      <End Role="Tender_Request" EntitySet="Tender_Request" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_Employee_Type" Association="Gabriq_System_DatabaseModel.Store.FK_Employee_Employee_Type">
+      <End Role="Employee_Type" EntitySet="Employee_Type" />
+      <End Role="Employee" EntitySet="Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_Task_Employee" Association="Gabriq_System_DatabaseModel.Store.FK_Employee_Task_Employee">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="Employee_Task" EntitySet="Employee_Task" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Supplier_Order_Employee" Association="Gabriq_System_DatabaseModel.Store.FK_Supplier_Order_Employee">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="Supplier_Order" EntitySet="Supplier_Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Employee" Association="Gabriq_System_DatabaseModel.Store.FK_User_Employee">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_Task_Task" Association="Gabriq_System_DatabaseModel.Store.FK_Employee_Task_Task">
+      <End Role="Task" EntitySet="Tasks" />
+      <End Role="Employee_Task" EntitySet="Employee_Task" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tasks_Equipment_Equipment" Association="Gabriq_System_DatabaseModel.Store.FK_Tasks_Equipment_Equipment">
+      <End Role="Equipment" EntitySet="Equipments" />
+      <End Role="Tasks_Equipment" EntitySet="Tasks_Equipment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inventory_On_Hand_Inventory" Association="Gabriq_System_DatabaseModel.Store.FK_Inventory_On_Hand_Inventory">
+      <End Role="Inventory" EntitySet="Inventories" />
+      <End Role="Inventory_On_Hand" EntitySet="Inventory_On_Hand" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Orderline_Inventory" Association="Gabriq_System_DatabaseModel.Store.FK_Orderline_Inventory">
+      <End Role="Inventory" EntitySet="Inventories" />
+      <End Role="Orderline" EntitySet="Orderlines" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Phase_Inventory_Inventory" Association="Gabriq_System_DatabaseModel.Store.FK_Phase_Inventory_Inventory">
+      <End Role="Inventory" EntitySet="Inventories" />
+      <End Role="Phase_Inventory" EntitySet="Phase_Inventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rental_Line_Inventory" Association="Gabriq_System_DatabaseModel.Store.FK_Rental_Line_Inventory">
+      <End Role="Inventory" EntitySet="Inventories" />
+      <End Role="Rental_Line" EntitySet="Rental_Line" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inventory_On_Hand_WriteOff_Inventory" Association="Gabriq_System_DatabaseModel.Store.FK_Inventory_On_Hand_WriteOff_Inventory">
+      <End Role="WriteOff_Inventory" EntitySet="WriteOff_Inventory" />
+      <End Role="Inventory_On_Hand" EntitySet="Inventory_On_Hand" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Supplier_Order_Order_Status" Association="Gabriq_System_DatabaseModel.Store.FK_Supplier_Order_Order_Status">
+      <End Role="Order_Status" EntitySet="Order_Status" />
+      <End Role="Supplier_Order" EntitySet="Supplier_Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Password_History" Association="Gabriq_System_DatabaseModel.Store.FK_User_Password_History">
+      <End Role="Password_History" EntitySet="Password_History" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Supplier_Order_Payment_Type" Association="Gabriq_System_DatabaseModel.Store.FK_Supplier_Order_Payment_Type">
+      <End Role="Payment_Type" EntitySet="Payment_Type" />
+      <End Role="Supplier_Order" EntitySet="Supplier_Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Phase_Inventory_Phase" Association="Gabriq_System_DatabaseModel.Store.FK_Phase_Inventory_Phase">
+      <End Role="Phase" EntitySet="Phases" />
+      <End Role="Phase_Inventory" EntitySet="Phase_Inventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Phase_Phase_Status" Association="Gabriq_System_DatabaseModel.Store.FK_Phase_Phase_Status">
+      <End Role="Phase_Status" EntitySet="Phase_Status" />
+      <End Role="Phase" EntitySet="Phases" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Phase_Project" Association="Gabriq_System_DatabaseModel.Store.FK_Phase_Project">
+      <End Role="Project" EntitySet="Projects" />
+      <End Role="Phase" EntitySet="Phases" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Project_Phase" Association="Gabriq_System_DatabaseModel.Store.FK_Project_Phase">
+      <End Role="Phase" EntitySet="Phases" />
+      <End Role="Project" EntitySet="Projects" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Subcontractor_Phase_Phase" Association="Gabriq_System_DatabaseModel.Store.FK_Subcontractor_Phase_Phase">
+      <End Role="Phase" EntitySet="Phases" />
+      <End Role="Subcontractor_Phase" EntitySet="Subcontractor_Phase" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Task_Phase" Association="Gabriq_System_DatabaseModel.Store.FK_Task_Phase">
+      <End Role="Phase" EntitySet="Phases" />
+      <End Role="Task" EntitySet="Tasks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Project_Project_Status" Association="Gabriq_System_DatabaseModel.Store.FK_Project_Project_Status">
+      <End Role="Project_Status" EntitySet="Project_Status" />
+      <End Role="Project" EntitySet="Projects" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Project_Tender" Association="Gabriq_System_DatabaseModel.Store.FK_Project_Tender">
+      <End Role="Tender" EntitySet="Tenders" />
+      <End Role="Project" EntitySet="Projects" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Supplier_Order_Project" Association="Gabriq_System_DatabaseModel.Store.FK_Supplier_Order_Project">
+      <End Role="Project" EntitySet="Projects" />
+      <End Role="Supplier_Order" EntitySet="Supplier_Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tender_Project" Association="Gabriq_System_DatabaseModel.Store.FK_Tender_Project">
+      <End Role="Project" EntitySet="Projects" />
+      <End Role="Tender" EntitySet="Tenders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rental_Rental_Status" Association="Gabriq_System_DatabaseModel.Store.FK_Rental_Rental_Status">
+      <End Role="Rental_Status" EntitySet="Rental_Status" />
+      <End Role="Rental" EntitySet="Rentals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rental_Supplier" Association="Gabriq_System_DatabaseModel.Store.FK_Rental_Supplier">
+      <End Role="Supplier" EntitySet="Suppliers" />
+      <End Role="Rental" EntitySet="Rentals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rental_Request_Rental_Request_Status" Association="Gabriq_System_DatabaseModel.Store.FK_Rental_Request_Rental_Request_Status">
+      <End Role="Rental_Request_Status" EntitySet="Rental_Request_Status" />
+      <End Role="Rental_Request" EntitySet="Rental_Request" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rental_Request_Supplier" Association="Gabriq_System_DatabaseModel.Store.FK_Rental_Request_Supplier">
+      <End Role="Supplier" EntitySet="Suppliers" />
+      <End Role="Rental_Request" EntitySet="Rental_Request" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Subcontractor_Phase_Subcontractor" Association="Gabriq_System_DatabaseModel.Store.FK_Subcontractor_Phase_Subcontractor">
+      <End Role="Subcontractor" EntitySet="Subcontractors" />
+      <End Role="Subcontractor_Phase" EntitySet="Subcontractor_Phase" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Supplier_Order_Supplier" Association="Gabriq_System_DatabaseModel.Store.FK_Supplier_Order_Supplier">
+      <End Role="Supplier" EntitySet="Suppliers" />
+      <End Role="Supplier_Order" EntitySet="Supplier_Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Supplier_Supplier_Request" Association="Gabriq_System_DatabaseModel.Store.FK_Supplier_Supplier_Request">
+      <End Role="Supplier_Request" EntitySet="Supplier_Request" />
+      <End Role="Supplier" EntitySet="Suppliers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Supplier_Supplier_Type" Association="Gabriq_System_DatabaseModel.Store.FK_Supplier_Supplier_Type">
+      <End Role="Supplier_Type" EntitySet="Supplier_Type" />
+      <End Role="Supplier" EntitySet="Suppliers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Supplier_Order_Supplier_Order" Association="Gabriq_System_DatabaseModel.Store.FK_Supplier_Order_Supplier_Order">
+      <End Role="Supplier_Order" EntitySet="Supplier_Order" />
+      <End Role="Supplier_Order1" EntitySet="Supplier_Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Supplier_Request_Supplier_Request_Status" Association="Gabriq_System_DatabaseModel.Store.FK_Supplier_Request_Supplier_Request_Status">
+      <End Role="Supplier_Request_Status" EntitySet="Supplier_Request_Status" />
+      <End Role="Supplier_Request" EntitySet="Supplier_Request" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Task_Task_Status" Association="Gabriq_System_DatabaseModel.Store.FK_Task_Task_Status">
+      <End Role="Task_Status" EntitySet="Task_Status" />
+      <End Role="Task" EntitySet="Tasks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tasks_Equipment_Task" Association="Gabriq_System_DatabaseModel.Store.FK_Tasks_Equipment_Task">
+      <End Role="Task" EntitySet="Tasks" />
+      <End Role="Tasks_Equipment" EntitySet="Tasks_Equipment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tender_Request_Tender" Association="Gabriq_System_DatabaseModel.Store.FK_Tender_Request_Tender">
+      <End Role="Tender" EntitySet="Tenders" />
+      <End Role="Tender_Request" EntitySet="Tender_Request" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tender_Tender_Status" Association="Gabriq_System_DatabaseModel.Store.FK_Tender_Tender_Status">
+      <End Role="Tender_Status" EntitySet="Tender_Status" />
+      <End Role="Tender" EntitySet="Tenders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tender_Request_Tender_Request_Status" Association="Gabriq_System_DatabaseModel.Store.FK_Tender_Request_Tender_Request_Status">
+      <End Role="Tender_Request_Status" EntitySet="Tender_Request_Status" />
+      <End Role="Tender_Request" EntitySet="Tender_Request" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_User_Role" Association="Gabriq_System_DatabaseModel.Store.FK_User_User_Role">
+      <End Role="User_Role" EntitySet="User_Role" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inventory_Category1" Association="Gabriq_System_DatabaseModel.Store.FK_Inventory_Category1">
+      <End Role="Category1" EntitySet="Category1" />
+      <End Role="Inventory1" EntitySet="Inventory1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Checkout_Checkin_Date_Checkout_Checkin1" Association="Gabriq_System_DatabaseModel.Store.FK_Checkout_Checkin_Date_Checkout_Checkin1">
+      <End Role="Checkout_Checkin1" EntitySet="Checkout_Checkin1" />
+      <End Role="Checkout_Checkin_Date1" EntitySet="Checkout_Checkin_Date1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Checkout_Checkin_Date_Tasks_Equipment1" Association="Gabriq_System_DatabaseModel.Store.FK_Checkout_Checkin_Date_Tasks_Equipment1">
+      <End Role="Tasks_Equipment" EntitySet="Tasks_Equipment" />
+      <End Role="Checkout_Checkin_Date1" EntitySet="Checkout_Checkin_Date1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tender_Request_Client1" Association="Gabriq_System_DatabaseModel.Store.FK_Tender_Request_Client1">
+      <End Role="Client1" EntitySet="Client1" />
+      <End Role="Tender_Request" EntitySet="Tender_Request" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_Employee_Type1" Association="Gabriq_System_DatabaseModel.Store.FK_Employee_Employee_Type1">
+      <End Role="Employee_Type" EntitySet="Employee_Type" />
+      <End Role="Employee1" EntitySet="Employee1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_Task_Employee1" Association="Gabriq_System_DatabaseModel.Store.FK_Employee_Task_Employee1">
+      <End Role="Employee1" EntitySet="Employee1" />
+      <End Role="Employee_Task" EntitySet="Employee_Task" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Supplier_Order_Employee1" Association="Gabriq_System_DatabaseModel.Store.FK_Supplier_Order_Employee1">
+      <End Role="Employee1" EntitySet="Employee1" />
+      <End Role="Supplier_Order" EntitySet="Supplier_Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Employee1" Association="Gabriq_System_DatabaseModel.Store.FK_User_Employee1">
+      <End Role="Employee1" EntitySet="Employee1" />
+      <End Role="User1" EntitySet="User1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_Task_Task1" Association="Gabriq_System_DatabaseModel.Store.FK_Employee_Task_Task1">
+      <End Role="Task1" EntitySet="Task1" />
+      <End Role="Employee_Task" EntitySet="Employee_Task" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tasks_Equipment_Equipment1" Association="Gabriq_System_DatabaseModel.Store.FK_Tasks_Equipment_Equipment1">
+      <End Role="Equipment1" EntitySet="Equipment1" />
+      <End Role="Tasks_Equipment" EntitySet="Tasks_Equipment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inventory_On_Hand_Inventory1" Association="Gabriq_System_DatabaseModel.Store.FK_Inventory_On_Hand_Inventory1">
+      <End Role="Inventory1" EntitySet="Inventory1" />
+      <End Role="Inventory_On_Hand" EntitySet="Inventory_On_Hand" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Orderline_Inventory1" Association="Gabriq_System_DatabaseModel.Store.FK_Orderline_Inventory1">
+      <End Role="Inventory1" EntitySet="Inventory1" />
+      <End Role="Orderline1" EntitySet="Orderline1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Phase_Inventory_Inventory1" Association="Gabriq_System_DatabaseModel.Store.FK_Phase_Inventory_Inventory1">
+      <End Role="Inventory1" EntitySet="Inventory1" />
+      <End Role="Phase_Inventory" EntitySet="Phase_Inventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rental_Line_Inventory1" Association="Gabriq_System_DatabaseModel.Store.FK_Rental_Line_Inventory1">
+      <End Role="Inventory1" EntitySet="Inventory1" />
+      <End Role="Rental_Line" EntitySet="Rental_Line" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Password_History1" Association="Gabriq_System_DatabaseModel.Store.FK_User_Password_History1">
+      <End Role="Password_History" EntitySet="Password_History" />
+      <End Role="User1" EntitySet="User1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Phase_Inventory_Phase1" Association="Gabriq_System_DatabaseModel.Store.FK_Phase_Inventory_Phase1">
+      <End Role="Phase1" EntitySet="Phase1" />
+      <End Role="Phase_Inventory" EntitySet="Phase_Inventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Phase_Phase_Status1" Association="Gabriq_System_DatabaseModel.Store.FK_Phase_Phase_Status1">
+      <End Role="Phase_Status" EntitySet="Phase_Status" />
+      <End Role="Phase1" EntitySet="Phase1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Phase_Project1" Association="Gabriq_System_DatabaseModel.Store.FK_Phase_Project1">
+      <End Role="Project1" EntitySet="Project1" />
+      <End Role="Phase1" EntitySet="Phase1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Project_Phase1" Association="Gabriq_System_DatabaseModel.Store.FK_Project_Phase1">
+      <End Role="Phase1" EntitySet="Phase1" />
+      <End Role="Project1" EntitySet="Project1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Subcontractor_Phase_Phase1" Association="Gabriq_System_DatabaseModel.Store.FK_Subcontractor_Phase_Phase1">
+      <End Role="Phase1" EntitySet="Phase1" />
+      <End Role="Subcontractor_Phase" EntitySet="Subcontractor_Phase" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Task_Phase1" Association="Gabriq_System_DatabaseModel.Store.FK_Task_Phase1">
+      <End Role="Phase1" EntitySet="Phase1" />
+      <End Role="Task1" EntitySet="Task1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Project_Project_Status1" Association="Gabriq_System_DatabaseModel.Store.FK_Project_Project_Status1">
+      <End Role="Project_Status" EntitySet="Project_Status" />
+      <End Role="Project1" EntitySet="Project1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Project_Tender1" Association="Gabriq_System_DatabaseModel.Store.FK_Project_Tender1">
+      <End Role="Tender1" EntitySet="Tender1" />
+      <End Role="Project1" EntitySet="Project1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Supplier_Order_Project1" Association="Gabriq_System_DatabaseModel.Store.FK_Supplier_Order_Project1">
+      <End Role="Project1" EntitySet="Project1" />
+      <End Role="Supplier_Order" EntitySet="Supplier_Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tender_Project1" Association="Gabriq_System_DatabaseModel.Store.FK_Tender_Project1">
+      <End Role="Project1" EntitySet="Project1" />
+      <End Role="Tender1" EntitySet="Tender1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rental_Rental_Status1" Association="Gabriq_System_DatabaseModel.Store.FK_Rental_Rental_Status1">
+      <End Role="Rental_Status" EntitySet="Rental_Status" />
+      <End Role="Rental1" EntitySet="Rental1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rental_Supplier1" Association="Gabriq_System_DatabaseModel.Store.FK_Rental_Supplier1">
+      <End Role="Supplier1" EntitySet="Supplier1" />
+      <End Role="Rental1" EntitySet="Rental1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rental_Request_Supplier1" Association="Gabriq_System_DatabaseModel.Store.FK_Rental_Request_Supplier1">
+      <End Role="Supplier1" EntitySet="Supplier1" />
+      <End Role="Rental_Request" EntitySet="Rental_Request" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Subcontractor_Phase_Subcontractor1" Association="Gabriq_System_DatabaseModel.Store.FK_Subcontractor_Phase_Subcontractor1">
+      <End Role="Subcontractor1" EntitySet="Subcontractor1" />
+      <End Role="Subcontractor_Phase" EntitySet="Subcontractor_Phase" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Supplier_Order_Supplier1" Association="Gabriq_System_DatabaseModel.Store.FK_Supplier_Order_Supplier1">
+      <End Role="Supplier1" EntitySet="Supplier1" />
+      <End Role="Supplier_Order" EntitySet="Supplier_Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Supplier_Supplier_Request1" Association="Gabriq_System_DatabaseModel.Store.FK_Supplier_Supplier_Request1">
+      <End Role="Supplier_Request" EntitySet="Supplier_Request" />
+      <End Role="Supplier1" EntitySet="Supplier1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Supplier_Supplier_Type1" Association="Gabriq_System_DatabaseModel.Store.FK_Supplier_Supplier_Type1">
+      <End Role="Supplier_Type" EntitySet="Supplier_Type" />
+      <End Role="Supplier1" EntitySet="Supplier1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Task_Task_Status1" Association="Gabriq_System_DatabaseModel.Store.FK_Task_Task_Status1">
+      <End Role="Task_Status" EntitySet="Task_Status" />
+      <End Role="Task1" EntitySet="Task1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tasks_Equipment_Task1" Association="Gabriq_System_DatabaseModel.Store.FK_Tasks_Equipment_Task1">
+      <End Role="Task1" EntitySet="Task1" />
+      <End Role="Tasks_Equipment" EntitySet="Tasks_Equipment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tender_Request_Tender1" Association="Gabriq_System_DatabaseModel.Store.FK_Tender_Request_Tender1">
+      <End Role="Tender1" EntitySet="Tender1" />
+      <End Role="Tender_Request" EntitySet="Tender_Request" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tender_Tender_Status1" Association="Gabriq_System_DatabaseModel.Store.FK_Tender_Tender_Status1">
+      <End Role="Tender_Status" EntitySet="Tender_Status" />
+      <End Role="Tender1" EntitySet="Tender1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_User_Role1" Association="Gabriq_System_DatabaseModel.Store.FK_User_User_Role1">
+      <End Role="User_Role" EntitySet="User_Role" />
+      <End Role="User1" EntitySet="User1" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inventory_Category2" Association="Gabriq_System_DatabaseModel.Store.FK_Inventory_Category2">
+      <End Role="Category2" EntitySet="Category2" />
+      <End Role="Inventory2" EntitySet="Inventory2" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Checkout_Checkin_Date_Checkout_Checkin2" Association="Gabriq_System_DatabaseModel.Store.FK_Checkout_Checkin_Date_Checkout_Checkin2">
+      <End Role="Checkout_Checkin2" EntitySet="Checkout_Checkin2" />
+      <End Role="Checkout_Checkin_Date2" EntitySet="Checkout_Checkin_Date2" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Checkout_Checkin_Date_Tasks_Equipment2" Association="Gabriq_System_DatabaseModel.Store.FK_Checkout_Checkin_Date_Tasks_Equipment2">
+      <End Role="Tasks_Equipment" EntitySet="Tasks_Equipment" />
+      <End Role="Checkout_Checkin_Date2" EntitySet="Checkout_Checkin_Date2" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tender_Request_Client2" Association="Gabriq_System_DatabaseModel.Store.FK_Tender_Request_Client2">
+      <End Role="Client2" EntitySet="Client2" />
+      <End Role="Tender_Request" EntitySet="Tender_Request" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_Employee_Type2" Association="Gabriq_System_DatabaseModel.Store.FK_Employee_Employee_Type2">
+      <End Role="Employee_Type" EntitySet="Employee_Type" />
+      <End Role="Employee2" EntitySet="Employee2" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_Task_Employee2" Association="Gabriq_System_DatabaseModel.Store.FK_Employee_Task_Employee2">
+      <End Role="Employee2" EntitySet="Employee2" />
+      <End Role="Employee_Task" EntitySet="Employee_Task" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Supplier_Order_Employee2" Association="Gabriq_System_DatabaseModel.Store.FK_Supplier_Order_Employee2">
+      <End Role="Employee2" EntitySet="Employee2" />
+      <End Role="Supplier_Order" EntitySet="Supplier_Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Employee2" Association="Gabriq_System_DatabaseModel.Store.FK_User_Employee2">
+      <End Role="Employee2" EntitySet="Employee2" />
+      <End Role="User2" EntitySet="User2" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_Task_Task2" Association="Gabriq_System_DatabaseModel.Store.FK_Employee_Task_Task2">
+      <End Role="Task2" EntitySet="Task2" />
+      <End Role="Employee_Task" EntitySet="Employee_Task" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tasks_Equipment_Equipment2" Association="Gabriq_System_DatabaseModel.Store.FK_Tasks_Equipment_Equipment2">
+      <End Role="Equipment2" EntitySet="Equipment2" />
+      <End Role="Tasks_Equipment" EntitySet="Tasks_Equipment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inventory_On_Hand_Inventory2" Association="Gabriq_System_DatabaseModel.Store.FK_Inventory_On_Hand_Inventory2">
+      <End Role="Inventory2" EntitySet="Inventory2" />
+      <End Role="Inventory_On_Hand" EntitySet="Inventory_On_Hand" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Orderline_Inventory2" Association="Gabriq_System_DatabaseModel.Store.FK_Orderline_Inventory2">
+      <End Role="Inventory2" EntitySet="Inventory2" />
+      <End Role="Orderline2" EntitySet="Orderline2" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Phase_Inventory_Inventory2" Association="Gabriq_System_DatabaseModel.Store.FK_Phase_Inventory_Inventory2">
+      <End Role="Inventory2" EntitySet="Inventory2" />
+      <End Role="Phase_Inventory" EntitySet="Phase_Inventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rental_Line_Inventory2" Association="Gabriq_System_DatabaseModel.Store.FK_Rental_Line_Inventory2">
+      <End Role="Inventory2" EntitySet="Inventory2" />
+      <End Role="Rental_Line" EntitySet="Rental_Line" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Password_History2" Association="Gabriq_System_DatabaseModel.Store.FK_User_Password_History2">
+      <End Role="Password_History" EntitySet="Password_History" />
+      <End Role="User2" EntitySet="User2" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Phase_Inventory_Phase2" Association="Gabriq_System_DatabaseModel.Store.FK_Phase_Inventory_Phase2">
+      <End Role="Phase2" EntitySet="Phase2" />
+      <End Role="Phase_Inventory" EntitySet="Phase_Inventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Phase_Phase_Status2" Association="Gabriq_System_DatabaseModel.Store.FK_Phase_Phase_Status2">
+      <End Role="Phase_Status" EntitySet="Phase_Status" />
+      <End Role="Phase2" EntitySet="Phase2" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Phase_Project2" Association="Gabriq_System_DatabaseModel.Store.FK_Phase_Project2">
+      <End Role="Project2" EntitySet="Project2" />
+      <End Role="Phase2" EntitySet="Phase2" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Project_Phase2" Association="Gabriq_System_DatabaseModel.Store.FK_Project_Phase2">
+      <End Role="Phase2" EntitySet="Phase2" />
+      <End Role="Project2" EntitySet="Project2" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Subcontractor_Phase_Phase2" Association="Gabriq_System_DatabaseModel.Store.FK_Subcontractor_Phase_Phase2">
+      <End Role="Phase2" EntitySet="Phase2" />
+      <End Role="Subcontractor_Phase" EntitySet="Subcontractor_Phase" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Task_Phase2" Association="Gabriq_System_DatabaseModel.Store.FK_Task_Phase2">
+      <End Role="Phase2" EntitySet="Phase2" />
+      <End Role="Task2" EntitySet="Task2" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Project_Project_Status2" Association="Gabriq_System_DatabaseModel.Store.FK_Project_Project_Status2">
+      <End Role="Project_Status" EntitySet="Project_Status" />
+      <End Role="Project2" EntitySet="Project2" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Project_Tender2" Association="Gabriq_System_DatabaseModel.Store.FK_Project_Tender2">
+      <End Role="Tender2" EntitySet="Tender2" />
+      <End Role="Project2" EntitySet="Project2" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Supplier_Order_Project2" Association="Gabriq_System_DatabaseModel.Store.FK_Supplier_Order_Project2">
+      <End Role="Project2" EntitySet="Project2" />
+      <End Role="Supplier_Order" EntitySet="Supplier_Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tender_Project2" Association="Gabriq_System_DatabaseModel.Store.FK_Tender_Project2">
+      <End Role="Project2" EntitySet="Project2" />
+      <End Role="Tender2" EntitySet="Tender2" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rental_Rental_Status2" Association="Gabriq_System_DatabaseModel.Store.FK_Rental_Rental_Status2">
+      <End Role="Rental_Status" EntitySet="Rental_Status" />
+      <End Role="Rental2" EntitySet="Rental2" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rental_Supplier2" Association="Gabriq_System_DatabaseModel.Store.FK_Rental_Supplier2">
+      <End Role="Supplier2" EntitySet="Supplier2" />
+      <End Role="Rental2" EntitySet="Rental2" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rental_Request_Supplier2" Association="Gabriq_System_DatabaseModel.Store.FK_Rental_Request_Supplier2">
+      <End Role="Supplier2" EntitySet="Supplier2" />
+      <End Role="Rental_Request" EntitySet="Rental_Request" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Subcontractor_Phase_Subcontractor2" Association="Gabriq_System_DatabaseModel.Store.FK_Subcontractor_Phase_Subcontractor2">
+      <End Role="Subcontractor2" EntitySet="Subcontractor2" />
+      <End Role="Subcontractor_Phase" EntitySet="Subcontractor_Phase" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Supplier_Order_Supplier2" Association="Gabriq_System_DatabaseModel.Store.FK_Supplier_Order_Supplier2">
+      <End Role="Supplier2" EntitySet="Supplier2" />
+      <End Role="Supplier_Order" EntitySet="Supplier_Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Supplier_Supplier_Request2" Association="Gabriq_System_DatabaseModel.Store.FK_Supplier_Supplier_Request2">
+      <End Role="Supplier_Request" EntitySet="Supplier_Request" />
+      <End Role="Supplier2" EntitySet="Supplier2" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Supplier_Supplier_Type2" Association="Gabriq_System_DatabaseModel.Store.FK_Supplier_Supplier_Type2">
+      <End Role="Supplier_Type" EntitySet="Supplier_Type" />
+      <End Role="Supplier2" EntitySet="Supplier2" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Task_Task_Status2" Association="Gabriq_System_DatabaseModel.Store.FK_Task_Task_Status2">
+      <End Role="Task_Status" EntitySet="Task_Status" />
+      <End Role="Task2" EntitySet="Task2" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tasks_Equipment_Task2" Association="Gabriq_System_DatabaseModel.Store.FK_Tasks_Equipment_Task2">
+      <End Role="Task2" EntitySet="Task2" />
+      <End Role="Tasks_Equipment" EntitySet="Tasks_Equipment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tender_Request_Tender2" Association="Gabriq_System_DatabaseModel.Store.FK_Tender_Request_Tender2">
+      <End Role="Tender2" EntitySet="Tender2" />
+      <End Role="Tender_Request" EntitySet="Tender_Request" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tender_Tender_Status2" Association="Gabriq_System_DatabaseModel.Store.FK_Tender_Tender_Status2">
+      <End Role="Tender_Status" EntitySet="Tender_Status" />
+      <End Role="Tender2" EntitySet="Tender2" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_User_Role2" Association="Gabriq_System_DatabaseModel.Store.FK_User_User_Role2">
+      <End Role="User_Role" EntitySet="User_Role" />
+      <End Role="User2" EntitySet="User2" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Categories">
+    <Key>
+      <PropertyRef Name="Category_ID" />
+    </Key>
+    <Property Name="Category_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Category_Name" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Category_Description" Type="varchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Checkout_Checkin">
+    <Key>
+      <PropertyRef Name="Checkout_ID" />
+    </Key>
+    <Property Name="Checkout_ID" Type="int" Nullable="false" />
+    <Property Name="Checkout_Equip" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Checkin_Equip" Type="varchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Checkout_Checkin_Date">
+    <Key>
+      <PropertyRef Name="Checkout_Date_ID" />
+    </Key>
+    <Property Name="Checkout_Date_ID" Type="int" Nullable="false" />
+    <Property Name="Tasks_Equipment_ID" Type="int" Nullable="true" />
+    <Property Name="Checkout_Date" Type="datetime" Nullable="true" />
+    <Property Name="Checkin_Date" Type="datetime" Nullable="true" />
+    <Property Name="Checkout_ID" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Clients">
+    <Key>
+      <PropertyRef Name="Client_ID" />
+    </Key>
+    <Property Name="Client_ID" Type="int" Nullable="false" />
+    <Property Name="Client_Name" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Client_Address" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Contact_Person" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Telephone_Numbers" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="Employees">
+    <Key>
+      <PropertyRef Name="Employee_ID" />
+    </Key>
+    <Property Name="Employee_ID" Type="int" Nullable="false" />
+    <Property Name="Employee_Type_ID" Type="int" Nullable="true" />
+    <Property Name="Employee_Name" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Employee_Surname" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Employee_ID_Number" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="Employee_Telephone_Number" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="Employee_Address" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Employee_Email_Address" Type="varchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Employee_Task">
+    <Key>
+      <PropertyRef Name="Employee_Task_ID" />
+    </Key>
+    <Property Name="Employee_Task_ID" Type="int" Nullable="false" />
+    <Property Name="Employee_ID" Type="int" Nullable="false" />
+    <Property Name="Task_ID" Type="int" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Employee_Type">
+    <Key>
+      <PropertyRef Name="Employee_Type_ID" />
+    </Key>
+    <Property Name="Employee_Type_ID" Type="int" Nullable="false" />
+    <Property Name="Employee_Type_Description" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Equipments">
+    <Key>
+      <PropertyRef Name="Equipment_ID" />
+    </Key>
+    <Property Name="Equipment_ID" Type="int" Nullable="false" />
+    <Property Name="Equipment_Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Equipment_Description" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Equipment_Condition" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Quantity" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="Inventories">
+    <Key>
+      <PropertyRef Name="Inventory_ID" />
+    </Key>
+    <Property Name="Inventory_ID" Type="int" Nullable="false" />
+    <Property Name="Category_ID" Type="int" Nullable="false" />
+    <Property Name="Inventory_Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Inventory_Description" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="Quantity" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="Inventory_On_Hand">
+    <Key>
+      <PropertyRef Name="Inventory_On_Hand_ID" />
+    </Key>
+    <Property Name="Inventory_On_Hand_ID" Type="int" Nullable="false" />
+    <Property Name="Inventory_ID" Type="int" Nullable="false" />
+    <Property Name="Quantity" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="WriteoffInventory_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Order_Status">
+    <Key>
+      <PropertyRef Name="Order_Status_ID" />
+    </Key>
+    <Property Name="Order_Status_ID" Type="int" Nullable="false" />
+    <Property Name="Status_Type" Type="varchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Orderlines">
+    <Key>
+      <PropertyRef Name="Orderline_ID" />
+    </Key>
+    <Property Name="Orderline_ID" Type="int" Nullable="false" />
+    <Property Name="Inventory_ID" Type="int" Nullable="false" />
+    <Property Name="Inventory_Item" Type="varchar(max)" Nullable="false" />
+    <Property Name="Quantity" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="Unit_Price" Type="decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Total_Cost" Type="decimal" Nullable="false" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityType Name="Password_History">
+    <Key>
+      <PropertyRef Name="Password_ID" />
+    </Key>
+    <Property Name="Password_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Payment_Type">
+    <Key>
+      <PropertyRef Name="Payment_Type_ID" />
+    </Key>
+    <Property Name="Payment_Type_ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Phases">
+    <Key>
+      <PropertyRef Name="Phase_ID" />
+    </Key>
+    <Property Name="Phase_ID" Type="int" Nullable="false" />
+    <Property Name="Phase_Status_ID" Type="int" Nullable="false" />
+    <Property Name="Project_ID" Type="int" Nullable="false" />
+    <Property Name="Phase_Name" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Phase_Description" Type="varchar" Nullable="false" MaxLength="300" />
+    <Property Name="Start_Date" Type="datetime" Nullable="false" />
+    <Property Name="End_Date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Phase_Inventory">
+    <Key>
+      <PropertyRef Name="Phase_Inventory_ID" />
+    </Key>
+    <Property Name="Phase_Inventory_ID" Type="int" Nullable="false" />
+    <Property Name="Phase_ID" Type="int" Nullable="true" />
+    <Property Name="Inventory_ID" Type="int" Nullable="true" />
+    <Property Name="Quantity" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="Phase_Status">
+    <Key>
+      <PropertyRef Name="Phase_Status_ID" />
+    </Key>
+    <Property Name="Phase_Status_ID" Type="int" Nullable="false" />
+    <Property Name="Status_Type" Type="varchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Projects">
+    <Key>
+      <PropertyRef Name="Project_ID" />
+    </Key>
+    <Property Name="Project_ID" Type="int" Nullable="false" />
+    <Property Name="Project_Status_ID" Type="int" Nullable="false" />
+    <Property Name="Project_Name" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Project_Description" Type="varchar" Nullable="false" MaxLength="350" />
+    <Property Name="Start_Date" Type="datetime" Nullable="false" />
+    <Property Name="End_Date" Type="datetime" Nullable="false" />
+    <Property Name="Site_Name" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Site_Address" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="Tender_ID" Type="int" Nullable="false" />
+    <Property Name="Phase_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Project_Status">
+    <Key>
+      <PropertyRef Name="Project_Status_ID" />
+    </Key>
+    <Property Name="Project_Status_ID" Type="int" Nullable="false" />
+    <Property Name="Description" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Comments" Type="varchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Rentals">
+    <Key>
+      <PropertyRef Name="Rental_ID" />
+    </Key>
+    <Property Name="Rental_ID" Type="int" Nullable="false" />
+    <Property Name="Rental_Status_ID" Type="int" Nullable="false" />
+    <Property Name="Supplier_ID" Type="int" Nullable="false" />
+    <Property Name="Rental_Name" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Rental_Cost" Type="decimal" Nullable="false" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityType Name="Rental_Line">
+    <Key>
+      <PropertyRef Name="Rental_Line_ID" />
+    </Key>
+    <Property Name="Rental_Line_ID" Type="int" Nullable="false" />
+    <Property Name="Inventory_ID" Type="int" Nullable="false" />
+    <Property Name="Rental_Name" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Start_Date" Type="datetime" Nullable="false" />
+    <Property Name="End_Date" Type="datetime" Nullable="false" />
+    <Property Name="Cost" Type="decimal" Nullable="false" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityType Name="Rental_Request">
+    <Key>
+      <PropertyRef Name="Rental_Request_ID" />
+    </Key>
+    <Property Name="Rental_Request_ID" Type="int" Nullable="false" />
+    <Property Name="Supplier_ID" Type="int" Nullable="true" />
+    <Property Name="Rental_Item" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Quantity" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="Request_Date" Type="datetime" Nullable="true" />
+    <Property Name="Rental_Request_Status_ID" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Rental_Request_Status">
+    <Key>
+      <PropertyRef Name="Rental_Request_Status_ID" />
+    </Key>
+    <Property Name="Rental_Request_Status_ID" Type="int" Nullable="false" />
+    <Property Name="Status_Type" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Rental_Status">
+    <Key>
+      <PropertyRef Name="Rental_Status_ID" />
+    </Key>
+    <Property Name="Rental_Status_ID" Type="int" Nullable="false" />
+    <Property Name="Status_Type" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Subcontractors">
+    <Key>
+      <PropertyRef Name="Subcontractor_ID" />
+    </Key>
+    <Property Name="Subcontractor_ID" Type="int" Nullable="false" />
+    <Property Name="Sub_Name" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Sub_Address" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="Sub_Job_Description" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="Telephone_Number" Type="varchar" Nullable="false" MaxLength="14" />
+    <Property Name="Email_Address" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Subcontractor_Phase">
+    <Key>
+      <PropertyRef Name="Subcontractor_Phase_ID" />
+    </Key>
+    <Property Name="Subcontractor_Phase_ID" Type="int" Nullable="false" />
+    <Property Name="Subcontractor_ID" Type="int" Nullable="true" />
+    <Property Name="Phase_ID" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Suppliers">
+    <Key>
+      <PropertyRef Name="Supplier_ID" />
+    </Key>
+    <Property Name="Supplier_ID" Type="int" Nullable="false" />
+    <Property Name="Supplier_Type_ID" Type="int" Nullable="true" />
+    <Property Name="Supplier_Request_ID" Type="int" Nullable="true" />
+    <Property Name="Supplier_Name" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Supplier_Address" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Supplier_Email" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Supplier_Telephone_Number" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="Supplier_Order">
+    <Key>
+      <PropertyRef Name="Supplier_Order_ID" />
+    </Key>
+    <Property Name="Supplier_Order_ID" Type="int" Nullable="false" />
+    <Property Name="Project_ID" Type="int" Nullable="false" />
+    <Property Name="Order_Status_ID" Type="int" Nullable="false" />
+    <Property Name="Payment_Type_ID" Type="int" Nullable="false" />
+    <Property Name="Employee_ID" Type="int" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="Order_Items" Type="varchar(max)" Nullable="false" />
+    <Property Name="Total_Cost" Type="decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Supplier_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Supplier_Request">
+    <Key>
+      <PropertyRef Name="Supplier_Request_ID" />
+    </Key>
+    <Property Name="Supplier_Request_ID" Type="int" Nullable="false" />
+    <Property Name="Item_Name" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Quantity" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="Date" Type="datetime" Nullable="true" />
+    <Property Name="Supplier_Request_Status_ID" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Supplier_Request_Status">
+    <Key>
+      <PropertyRef Name="Supplier_Request_Status_ID" />
+    </Key>
+    <Property Name="Supplier_Request_Status_ID" Type="int" Nullable="false" />
+    <Property Name="Description" Type="varchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Supplier_Type">
+    <Key>
+      <PropertyRef Name="Supplier_Type_ID" />
+    </Key>
+    <Property Name="Supplier_Type_ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" Nullable="true" />
+    <Property Name="definition" Type="varbinary(max)" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Tasks">
+    <Key>
+      <PropertyRef Name="Task_ID" />
+    </Key>
+    <Property Name="Task_ID" Type="int" Nullable="false" />
+    <Property Name="Phase_ID" Type="int" Nullable="false" />
+    <Property Name="Task_Status_ID" Type="int" Nullable="false" />
+    <Property Name="Task_Description" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="Start_Date" Type="datetime" Nullable="false" />
+    <Property Name="End_Date" Type="datetime" Nullable="false" />
+    <Property Name="Equipment" Type="varchar" Nullable="false" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="Task_Status">
+    <Key>
+      <PropertyRef Name="Task_Status_ID" />
+    </Key>
+    <Property Name="Task_Status_ID" Type="int" Nullable="false" />
+    <Property Name="Status_Type" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Tasks_Equipment">
+    <Key>
+      <PropertyRef Name="Tasks_Equipment_ID" />
+    </Key>
+    <Property Name="Tasks_Equipment_ID" Type="int" Nullable="false" />
+    <Property Name="Task_ID" Type="int" Nullable="false" />
+    <Property Name="Equipment_ID" Type="int" Nullable="false" />
+    <Property Name="Checkout_Equipment" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Checkin_Equipment" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Quantity_Checkout" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="Quantity_Checkin" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="Tenders">
+    <Key>
+      <PropertyRef Name="Tender_ID" />
+    </Key>
+    <Property Name="Tender_ID" Type="int" Nullable="false" />
+    <Property Name="Tender_Status_ID" Type="int" Nullable="false" />
+    <Property Name="Tender_Name" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Tender_Source" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Budget" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="Project_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tender_Request">
+    <Key>
+      <PropertyRef Name="Tender_Request_ID" />
+    </Key>
+    <Property Name="Tender_Request_ID" Type="int" Nullable="false" />
+    <Property Name="Tender_Request_Status_ID" Type="int" Nullable="false" />
+    <Property Name="Client_ID" Type="int" Nullable="false" />
+    <Property Name="Tender_ID" Type="int" Nullable="false" />
+    <Property Name="Tender_Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Advertisement_Document" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tender_Request_Status">
+    <Key>
+      <PropertyRef Name="Tender_Request_Status_ID" />
+    </Key>
+    <Property Name="Tender_Request_Status_ID" Type="int" Nullable="false" />
+    <Property Name="Status_Type" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Tender_Status">
+    <Key>
+      <PropertyRef Name="Tender_Status_ID" />
+    </Key>
+    <Property Name="Tender_Status_ID" Type="int" Nullable="false" />
+    <Property Name="Status_Type" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="User_ID" />
+    </Key>
+    <Property Name="User_ID" Type="int" Nullable="false" />
+    <Property Name="User_Role_ID" Type="int" Nullable="false" />
+    <Property Name="Employee_ID" Type="int" Nullable="false" />
+    <Property Name="Password_ID" Type="int" Nullable="false" />
+    <Property Name="Username" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="User_Role">
+    <Key>
+      <PropertyRef Name="User_Role_ID" />
+    </Key>
+    <Property Name="User_Role_ID" Type="int" Nullable="false" />
+    <Property Name="Role_Name" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="WriteOff_Inventory">
+    <Key>
+      <PropertyRef Name="WriteoffInventory_ID" />
+    </Key>
+    <Property Name="WriteoffInventory_ID" Type="int" Nullable="false" />
+    <Property Name="Item_Name" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Quality" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Reason" Type="varchar" Nullable="false" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="Category1">
+    <Key>
+      <PropertyRef Name="Category_ID" />
+    </Key>
+    <Property Name="Category_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Category_Name" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Category_Description" Type="varchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Checkout_Checkin1">
+    <Key>
+      <PropertyRef Name="Checkout_ID" />
+    </Key>
+    <Property Name="Checkout_ID" Type="int" Nullable="false" />
+    <Property Name="Checkout_Equip" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Checkin_Equip" Type="varchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Checkout_Checkin_Date1">
+    <Key>
+      <PropertyRef Name="Checkout_Date_ID" />
+    </Key>
+    <Property Name="Checkout_Date_ID" Type="int" Nullable="false" />
+    <Property Name="Tasks_Equipment_ID" Type="int" Nullable="true" />
+    <Property Name="Checkout_Date" Type="datetime" Nullable="true" />
+    <Property Name="Checkin_Date" Type="datetime" Nullable="true" />
+    <Property Name="Checkout_ID" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Client1">
+    <Key>
+      <PropertyRef Name="Client_ID" />
+    </Key>
+    <Property Name="Client_ID" Type="int" Nullable="false" />
+    <Property Name="Client_Name" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Client_Address" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Contact_Person" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Telephone_Numbers" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="Employee1">
+    <Key>
+      <PropertyRef Name="Employee_ID" />
+    </Key>
+    <Property Name="Employee_ID" Type="int" Nullable="false" />
+    <Property Name="Employee_Type_ID" Type="int" Nullable="true" />
+    <Property Name="Employee_Name" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Employee_Surname" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Employee_ID_Number" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="Employee_Telephone_Number" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="Employee_Address" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Employee_Email_Address" Type="varchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Equipment1">
+    <Key>
+      <PropertyRef Name="Equipment_ID" />
+    </Key>
+    <Property Name="Equipment_ID" Type="int" Nullable="false" />
+    <Property Name="Equipment_Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Equipment_Description" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Equipment_Condition" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Quantity" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="Inventory1">
+    <Key>
+      <PropertyRef Name="Inventory_ID" />
+    </Key>
+    <Property Name="Inventory_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Category_ID" Type="int" Nullable="false" />
+    <Property Name="Inventory_Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Inventory_Description" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="Quantity" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="Orderline1">
+    <Key>
+      <PropertyRef Name="Orderline_ID" />
+    </Key>
+    <Property Name="Orderline_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Inventory_ID" Type="int" Nullable="false" />
+    <Property Name="Inventory_Item" Type="varchar(max)" Nullable="false" />
+    <Property Name="Quantity" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="Unit_Price" Type="decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Total_Cost" Type="decimal" Nullable="false" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityType Name="Phase1">
+    <Key>
+      <PropertyRef Name="Phase_ID" />
+    </Key>
+    <Property Name="Phase_ID" Type="int" Nullable="false" />
+    <Property Name="Phase_Status_ID" Type="int" Nullable="false" />
+    <Property Name="Project_ID" Type="int" Nullable="false" />
+    <Property Name="Phase_Name" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Phase_Description" Type="varchar" Nullable="false" MaxLength="300" />
+    <Property Name="Start_Date" Type="datetime" Nullable="false" />
+    <Property Name="End_Date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Project1">
+    <Key>
+      <PropertyRef Name="Project_ID" />
+    </Key>
+    <Property Name="Project_ID" Type="int" Nullable="false" />
+    <Property Name="Project_Status_ID" Type="int" Nullable="false" />
+    <Property Name="Project_Name" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Project_Description" Type="varchar" Nullable="false" MaxLength="350" />
+    <Property Name="Start_Date" Type="datetime" Nullable="false" />
+    <Property Name="End_Date" Type="datetime" Nullable="false" />
+    <Property Name="Site_Name" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Site_Address" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="Tender_ID" Type="int" Nullable="false" />
+    <Property Name="Phase_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Rental1">
+    <Key>
+      <PropertyRef Name="Rental_ID" />
+    </Key>
+    <Property Name="Rental_ID" Type="int" Nullable="false" />
+    <Property Name="Rental_Status_ID" Type="int" Nullable="false" />
+    <Property Name="Supplier_ID" Type="int" Nullable="false" />
+    <Property Name="Rental_Name" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Rental_Cost" Type="decimal" Nullable="false" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityType Name="Subcontractor1">
+    <Key>
+      <PropertyRef Name="Subcontractor_ID" />
+    </Key>
+    <Property Name="Subcontractor_ID" Type="int" Nullable="false" />
+    <Property Name="Sub_Name" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Sub_Address" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="Sub_Job_Description" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="Telephone_Number" Type="varchar" Nullable="false" MaxLength="14" />
+    <Property Name="Email_Address" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Supplier1">
+    <Key>
+      <PropertyRef Name="Supplier_ID" />
+    </Key>
+    <Property Name="Supplier_ID" Type="int" Nullable="false" />
+    <Property Name="Supplier_Type_ID" Type="int" Nullable="true" />
+    <Property Name="Supplier_Request_ID" Type="int" Nullable="true" />
+    <Property Name="Supplier_Name" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Supplier_Address" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Supplier_Email" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Supplier_Telephone_Number" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="Task1">
+    <Key>
+      <PropertyRef Name="Task_ID" />
+    </Key>
+    <Property Name="Task_ID" Type="int" Nullable="false" />
+    <Property Name="Phase_ID" Type="int" Nullable="false" />
+    <Property Name="Task_Status_ID" Type="int" Nullable="false" />
+    <Property Name="Task_Description" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="Start_Date" Type="datetime" Nullable="false" />
+    <Property Name="End_Date" Type="datetime" Nullable="false" />
+    <Property Name="Equipment" Type="varchar" Nullable="false" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="Tender1">
+    <Key>
+      <PropertyRef Name="Tender_ID" />
+    </Key>
+    <Property Name="Tender_ID" Type="int" Nullable="false" />
+    <Property Name="Tender_Status_ID" Type="int" Nullable="false" />
+    <Property Name="Tender_Name" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Tender_Source" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Budget" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="Project_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User1">
+    <Key>
+      <PropertyRef Name="User_ID" />
+    </Key>
+    <Property Name="User_ID" Type="int" Nullable="false" />
+    <Property Name="User_Role_ID" Type="int" Nullable="false" />
+    <Property Name="Employee_ID" Type="int" Nullable="false" />
+    <Property Name="Password_ID" Type="int" Nullable="false" />
+    <Property Name="Username" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Category2">
+    <Key>
+      <PropertyRef Name="Category_ID" />
+    </Key>
+    <Property Name="Category_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Category_Name" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Category_Description" Type="varchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Checkout_Checkin2">
+    <Key>
+      <PropertyRef Name="Checkout_ID" />
+    </Key>
+    <Property Name="Checkout_ID" Type="int" Nullable="false" />
+    <Property Name="Checkout_Equip" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Checkin_Equip" Type="varchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Checkout_Checkin_Date2">
+    <Key>
+      <PropertyRef Name="Checkout_Date_ID" />
+    </Key>
+    <Property Name="Checkout_Date_ID" Type="int" Nullable="false" />
+    <Property Name="Tasks_Equipment_ID" Type="int" Nullable="true" />
+    <Property Name="Checkout_Date" Type="datetime" Nullable="true" />
+    <Property Name="Checkin_Date" Type="datetime" Nullable="true" />
+    <Property Name="Checkout_ID" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Client2">
+    <Key>
+      <PropertyRef Name="Client_ID" />
+    </Key>
+    <Property Name="Client_ID" Type="int" Nullable="false" />
+    <Property Name="Client_Name" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Client_Address" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Contact_Person" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Telephone_Numbers" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="Employee2">
+    <Key>
+      <PropertyRef Name="Employee_ID" />
+    </Key>
+    <Property Name="Employee_ID" Type="int" Nullable="false" />
+    <Property Name="Employee_Type_ID" Type="int" Nullable="true" />
+    <Property Name="Employee_Name" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Employee_Surname" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Employee_ID_Number" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="Employee_Telephone_Number" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+    <Property Name="Employee_Address" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Employee_Email_Address" Type="varchar" Nullable="true" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Equipment2">
+    <Key>
+      <PropertyRef Name="Equipment_ID" />
+    </Key>
+    <Property Name="Equipment_ID" Type="int" Nullable="false" />
+    <Property Name="Equipment_Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Equipment_Description" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Equipment_Condition" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Quantity" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="Inventory2">
+    <Key>
+      <PropertyRef Name="Inventory_ID" />
+    </Key>
+    <Property Name="Inventory_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Category_ID" Type="int" Nullable="false" />
+    <Property Name="Inventory_Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Inventory_Description" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="Quantity" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="Orderline2">
+    <Key>
+      <PropertyRef Name="Orderline_ID" />
+    </Key>
+    <Property Name="Orderline_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Inventory_ID" Type="int" Nullable="false" />
+    <Property Name="Inventory_Item" Type="varchar(max)" Nullable="false" />
+    <Property Name="Quantity" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="Unit_Price" Type="decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Total_Cost" Type="decimal" Nullable="false" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityType Name="Phase2">
+    <Key>
+      <PropertyRef Name="Phase_ID" />
+    </Key>
+    <Property Name="Phase_ID" Type="int" Nullable="false" />
+    <Property Name="Phase_Status_ID" Type="int" Nullable="false" />
+    <Property Name="Project_ID" Type="int" Nullable="false" />
+    <Property Name="Phase_Name" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Phase_Description" Type="varchar" Nullable="false" MaxLength="300" />
+    <Property Name="Start_Date" Type="datetime" Nullable="false" />
+    <Property Name="End_Date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Project2">
+    <Key>
+      <PropertyRef Name="Project_ID" />
+    </Key>
+    <Property Name="Project_ID" Type="int" Nullable="false" />
+    <Property Name="Project_Status_ID" Type="int" Nullable="false" />
+    <Property Name="Project_Name" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Project_Description" Type="varchar" Nullable="false" MaxLength="350" />
+    <Property Name="Start_Date" Type="datetime" Nullable="false" />
+    <Property Name="End_Date" Type="datetime" Nullable="false" />
+    <Property Name="Site_Name" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Site_Address" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="Tender_ID" Type="int" Nullable="false" />
+    <Property Name="Phase_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Rental2">
+    <Key>
+      <PropertyRef Name="Rental_ID" />
+    </Key>
+    <Property Name="Rental_ID" Type="int" Nullable="false" />
+    <Property Name="Rental_Status_ID" Type="int" Nullable="false" />
+    <Property Name="Supplier_ID" Type="int" Nullable="false" />
+    <Property Name="Rental_Name" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Rental_Cost" Type="decimal" Nullable="false" Precision="19" Scale="4" />
+  </EntityType>
+  <EntityType Name="Subcontractor2">
+    <Key>
+      <PropertyRef Name="Subcontractor_ID" />
+    </Key>
+    <Property Name="Subcontractor_ID" Type="int" Nullable="false" />
+    <Property Name="Sub_Name" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Sub_Address" Type="varchar" Nullable="false" MaxLength="150" />
+    <Property Name="Sub_Job_Description" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="Telephone_Number" Type="varchar" Nullable="false" MaxLength="14" />
+    <Property Name="Email_Address" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Supplier2">
+    <Key>
+      <PropertyRef Name="Supplier_ID" />
+    </Key>
+    <Property Name="Supplier_ID" Type="int" Nullable="false" />
+    <Property Name="Supplier_Type_ID" Type="int" Nullable="true" />
+    <Property Name="Supplier_Request_ID" Type="int" Nullable="true" />
+    <Property Name="Supplier_Name" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Supplier_Address" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Supplier_Email" Type="varchar" Nullable="true" MaxLength="50" />
+    <Property Name="Supplier_Telephone_Number" Type="decimal" Nullable="true" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="Task2">
+    <Key>
+      <PropertyRef Name="Task_ID" />
+    </Key>
+    <Property Name="Task_ID" Type="int" Nullable="false" />
+    <Property Name="Phase_ID" Type="int" Nullable="false" />
+    <Property Name="Task_Status_ID" Type="int" Nullable="false" />
+    <Property Name="Task_Description" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="Start_Date" Type="datetime" Nullable="false" />
+    <Property Name="End_Date" Type="datetime" Nullable="false" />
+    <Property Name="Equipment" Type="varchar" Nullable="false" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="Tender2">
+    <Key>
+      <PropertyRef Name="Tender_ID" />
+    </Key>
+    <Property Name="Tender_ID" Type="int" Nullable="false" />
+    <Property Name="Tender_Status_ID" Type="int" Nullable="false" />
+    <Property Name="Tender_Name" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Tender_Source" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Budget" Type="decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="Project_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User2">
+    <Key>
+      <PropertyRef Name="User_ID" />
+    </Key>
+    <Property Name="User_ID" Type="int" Nullable="false" />
+    <Property Name="User_Role_ID" Type="int" Nullable="false" />
+    <Property Name="Employee_ID" Type="int" Nullable="false" />
+    <Property Name="Password_ID" Type="int" Nullable="false" />
+    <Property Name="Username" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Inventory_Category">
+    <End Role="Category" Type="Gabriq_System_DatabaseModel.Store.Categories" Multiplicity="1" />
+    <End Role="Inventory" Type="Gabriq_System_DatabaseModel.Store.Inventories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="Category_ID" />
+      </Principal>
+      <Dependent Role="Inventory">
+        <PropertyRef Name="Category_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Checkout_Checkin_Date_Checkout_Checkin">
+    <End Role="Checkout_Checkin" Type="Gabriq_System_DatabaseModel.Store.Checkout_Checkin" Multiplicity="0..1" />
+    <End Role="Checkout_Checkin_Date" Type="Gabriq_System_DatabaseModel.Store.Checkout_Checkin_Date" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Checkout_Checkin">
+        <PropertyRef Name="Checkout_ID" />
+      </Principal>
+      <Dependent Role="Checkout_Checkin_Date">
+        <PropertyRef Name="Checkout_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Checkout_Checkin_Date_Tasks_Equipment">
+    <End Role="Tasks_Equipment" Type="Gabriq_System_DatabaseModel.Store.Tasks_Equipment" Multiplicity="0..1" />
+    <End Role="Checkout_Checkin_Date" Type="Gabriq_System_DatabaseModel.Store.Checkout_Checkin_Date" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tasks_Equipment">
+        <PropertyRef Name="Tasks_Equipment_ID" />
+      </Principal>
+      <Dependent Role="Checkout_Checkin_Date">
+        <PropertyRef Name="Tasks_Equipment_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tender_Request_Client">
+    <End Role="Client" Type="Gabriq_System_DatabaseModel.Store.Clients" Multiplicity="1" />
+    <End Role="Tender_Request" Type="Gabriq_System_DatabaseModel.Store.Tender_Request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="Client_ID" />
+      </Principal>
+      <Dependent Role="Tender_Request">
+        <PropertyRef Name="Client_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_Employee_Type">
+    <End Role="Employee_Type" Type="Gabriq_System_DatabaseModel.Store.Employee_Type" Multiplicity="0..1" />
+    <End Role="Employee" Type="Gabriq_System_DatabaseModel.Store.Employees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee_Type">
+        <PropertyRef Name="Employee_Type_ID" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="Employee_Type_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_Task_Employee">
+    <End Role="Employee" Type="Gabriq_System_DatabaseModel.Store.Employees" Multiplicity="1" />
+    <End Role="Employee_Task" Type="Gabriq_System_DatabaseModel.Store.Employee_Task" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="Employee_ID" />
+      </Principal>
+      <Dependent Role="Employee_Task">
+        <PropertyRef Name="Employee_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Supplier_Order_Employee">
+    <End Role="Employee" Type="Gabriq_System_DatabaseModel.Store.Employees" Multiplicity="1" />
+    <End Role="Supplier_Order" Type="Gabriq_System_DatabaseModel.Store.Supplier_Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="Employee_ID" />
+      </Principal>
+      <Dependent Role="Supplier_Order">
+        <PropertyRef Name="Employee_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Employee">
+    <End Role="Employee" Type="Gabriq_System_DatabaseModel.Store.Employees" Multiplicity="1" />
+    <End Role="User" Type="Gabriq_System_DatabaseModel.Store.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="Employee_ID" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="Employee_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_Task_Task">
+    <End Role="Task" Type="Gabriq_System_DatabaseModel.Store.Tasks" Multiplicity="1" />
+    <End Role="Employee_Task" Type="Gabriq_System_DatabaseModel.Store.Employee_Task" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Task">
+        <PropertyRef Name="Task_ID" />
+      </Principal>
+      <Dependent Role="Employee_Task">
+        <PropertyRef Name="Task_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tasks_Equipment_Equipment">
+    <End Role="Equipment" Type="Gabriq_System_DatabaseModel.Store.Equipments" Multiplicity="1" />
+    <End Role="Tasks_Equipment" Type="Gabriq_System_DatabaseModel.Store.Tasks_Equipment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Equipment">
+        <PropertyRef Name="Equipment_ID" />
+      </Principal>
+      <Dependent Role="Tasks_Equipment">
+        <PropertyRef Name="Equipment_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inventory_On_Hand_Inventory">
+    <End Role="Inventory" Type="Gabriq_System_DatabaseModel.Store.Inventories" Multiplicity="1" />
+    <End Role="Inventory_On_Hand" Type="Gabriq_System_DatabaseModel.Store.Inventory_On_Hand" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Inventory">
+        <PropertyRef Name="Inventory_ID" />
+      </Principal>
+      <Dependent Role="Inventory_On_Hand">
+        <PropertyRef Name="Inventory_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Orderline_Inventory">
+    <End Role="Inventory" Type="Gabriq_System_DatabaseModel.Store.Inventories" Multiplicity="1" />
+    <End Role="Orderline" Type="Gabriq_System_DatabaseModel.Store.Orderlines" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Inventory">
+        <PropertyRef Name="Inventory_ID" />
+      </Principal>
+      <Dependent Role="Orderline">
+        <PropertyRef Name="Inventory_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Phase_Inventory_Inventory">
+    <End Role="Inventory" Type="Gabriq_System_DatabaseModel.Store.Inventories" Multiplicity="0..1" />
+    <End Role="Phase_Inventory" Type="Gabriq_System_DatabaseModel.Store.Phase_Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Inventory">
+        <PropertyRef Name="Inventory_ID" />
+      </Principal>
+      <Dependent Role="Phase_Inventory">
+        <PropertyRef Name="Inventory_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rental_Line_Inventory">
+    <End Role="Inventory" Type="Gabriq_System_DatabaseModel.Store.Inventories" Multiplicity="1" />
+    <End Role="Rental_Line" Type="Gabriq_System_DatabaseModel.Store.Rental_Line" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Inventory">
+        <PropertyRef Name="Inventory_ID" />
+      </Principal>
+      <Dependent Role="Rental_Line">
+        <PropertyRef Name="Inventory_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inventory_On_Hand_WriteOff_Inventory">
+    <End Role="WriteOff_Inventory" Type="Gabriq_System_DatabaseModel.Store.WriteOff_Inventory" Multiplicity="1" />
+    <End Role="Inventory_On_Hand" Type="Gabriq_System_DatabaseModel.Store.Inventory_On_Hand" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WriteOff_Inventory">
+        <PropertyRef Name="WriteoffInventory_ID" />
+      </Principal>
+      <Dependent Role="Inventory_On_Hand">
+        <PropertyRef Name="WriteoffInventory_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Supplier_Order_Order_Status">
+    <End Role="Order_Status" Type="Gabriq_System_DatabaseModel.Store.Order_Status" Multiplicity="1" />
+    <End Role="Supplier_Order" Type="Gabriq_System_DatabaseModel.Store.Supplier_Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order_Status">
+        <PropertyRef Name="Order_Status_ID" />
+      </Principal>
+      <Dependent Role="Supplier_Order">
+        <PropertyRef Name="Order_Status_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Password_History">
+    <End Role="Password_History" Type="Gabriq_System_DatabaseModel.Store.Password_History" Multiplicity="1" />
+    <End Role="User" Type="Gabriq_System_DatabaseModel.Store.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Password_History">
+        <PropertyRef Name="Password_ID" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="Password_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Supplier_Order_Payment_Type">
+    <End Role="Payment_Type" Type="Gabriq_System_DatabaseModel.Store.Payment_Type" Multiplicity="1" />
+    <End Role="Supplier_Order" Type="Gabriq_System_DatabaseModel.Store.Supplier_Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Payment_Type">
+        <PropertyRef Name="Payment_Type_ID" />
+      </Principal>
+      <Dependent Role="Supplier_Order">
+        <PropertyRef Name="Payment_Type_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Phase_Inventory_Phase">
+    <End Role="Phase" Type="Gabriq_System_DatabaseModel.Store.Phases" Multiplicity="0..1" />
+    <End Role="Phase_Inventory" Type="Gabriq_System_DatabaseModel.Store.Phase_Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Phase">
+        <PropertyRef Name="Phase_ID" />
+      </Principal>
+      <Dependent Role="Phase_Inventory">
+        <PropertyRef Name="Phase_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Phase_Phase_Status">
+    <End Role="Phase_Status" Type="Gabriq_System_DatabaseModel.Store.Phase_Status" Multiplicity="1" />
+    <End Role="Phase" Type="Gabriq_System_DatabaseModel.Store.Phases" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Phase_Status">
+        <PropertyRef Name="Phase_Status_ID" />
+      </Principal>
+      <Dependent Role="Phase">
+        <PropertyRef Name="Phase_Status_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Phase_Project">
+    <End Role="Project" Type="Gabriq_System_DatabaseModel.Store.Projects" Multiplicity="1" />
+    <End Role="Phase" Type="Gabriq_System_DatabaseModel.Store.Phases" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Project">
+        <PropertyRef Name="Project_ID" />
+      </Principal>
+      <Dependent Role="Phase">
+        <PropertyRef Name="Project_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Project_Phase">
+    <End Role="Phase" Type="Gabriq_System_DatabaseModel.Store.Phases" Multiplicity="1" />
+    <End Role="Project" Type="Gabriq_System_DatabaseModel.Store.Projects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Phase">
+        <PropertyRef Name="Phase_ID" />
+      </Principal>
+      <Dependent Role="Project">
+        <PropertyRef Name="Phase_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Subcontractor_Phase_Phase">
+    <End Role="Phase" Type="Gabriq_System_DatabaseModel.Store.Phases" Multiplicity="0..1" />
+    <End Role="Subcontractor_Phase" Type="Gabriq_System_DatabaseModel.Store.Subcontractor_Phase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Phase">
+        <PropertyRef Name="Phase_ID" />
+      </Principal>
+      <Dependent Role="Subcontractor_Phase">
+        <PropertyRef Name="Phase_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Task_Phase">
+    <End Role="Phase" Type="Gabriq_System_DatabaseModel.Store.Phases" Multiplicity="1" />
+    <End Role="Task" Type="Gabriq_System_DatabaseModel.Store.Tasks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Phase">
+        <PropertyRef Name="Phase_ID" />
+      </Principal>
+      <Dependent Role="Task">
+        <PropertyRef Name="Phase_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Project_Project_Status">
+    <End Role="Project_Status" Type="Gabriq_System_DatabaseModel.Store.Project_Status" Multiplicity="1" />
+    <End Role="Project" Type="Gabriq_System_DatabaseModel.Store.Projects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Project_Status">
+        <PropertyRef Name="Project_Status_ID" />
+      </Principal>
+      <Dependent Role="Project">
+        <PropertyRef Name="Project_Status_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Project_Tender">
+    <End Role="Tender" Type="Gabriq_System_DatabaseModel.Store.Tenders" Multiplicity="1" />
+    <End Role="Project" Type="Gabriq_System_DatabaseModel.Store.Projects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tender">
+        <PropertyRef Name="Tender_ID" />
+      </Principal>
+      <Dependent Role="Project">
+        <PropertyRef Name="Tender_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Supplier_Order_Project">
+    <End Role="Project" Type="Gabriq_System_DatabaseModel.Store.Projects" Multiplicity="1" />
+    <End Role="Supplier_Order" Type="Gabriq_System_DatabaseModel.Store.Supplier_Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Project">
+        <PropertyRef Name="Project_ID" />
+      </Principal>
+      <Dependent Role="Supplier_Order">
+        <PropertyRef Name="Project_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tender_Project">
+    <End Role="Project" Type="Gabriq_System_DatabaseModel.Store.Projects" Multiplicity="1" />
+    <End Role="Tender" Type="Gabriq_System_DatabaseModel.Store.Tenders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Project">
+        <PropertyRef Name="Project_ID" />
+      </Principal>
+      <Dependent Role="Tender">
+        <PropertyRef Name="Project_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rental_Rental_Status">
+    <End Role="Rental_Status" Type="Gabriq_System_DatabaseModel.Store.Rental_Status" Multiplicity="1" />
+    <End Role="Rental" Type="Gabriq_System_DatabaseModel.Store.Rentals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rental_Status">
+        <PropertyRef Name="Rental_Status_ID" />
+      </Principal>
+      <Dependent Role="Rental">
+        <PropertyRef Name="Rental_Status_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rental_Supplier">
+    <End Role="Supplier" Type="Gabriq_System_DatabaseModel.Store.Suppliers" Multiplicity="1" />
+    <End Role="Rental" Type="Gabriq_System_DatabaseModel.Store.Rentals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier">
+        <PropertyRef Name="Supplier_ID" />
+      </Principal>
+      <Dependent Role="Rental">
+        <PropertyRef Name="Supplier_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rental_Request_Rental_Request_Status">
+    <End Role="Rental_Request_Status" Type="Gabriq_System_DatabaseModel.Store.Rental_Request_Status" Multiplicity="0..1" />
+    <End Role="Rental_Request" Type="Gabriq_System_DatabaseModel.Store.Rental_Request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rental_Request_Status">
+        <PropertyRef Name="Rental_Request_Status_ID" />
+      </Principal>
+      <Dependent Role="Rental_Request">
+        <PropertyRef Name="Rental_Request_Status_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rental_Request_Supplier">
+    <End Role="Supplier" Type="Gabriq_System_DatabaseModel.Store.Suppliers" Multiplicity="0..1" />
+    <End Role="Rental_Request" Type="Gabriq_System_DatabaseModel.Store.Rental_Request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier">
+        <PropertyRef Name="Supplier_ID" />
+      </Principal>
+      <Dependent Role="Rental_Request">
+        <PropertyRef Name="Supplier_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Subcontractor_Phase_Subcontractor">
+    <End Role="Subcontractor" Type="Gabriq_System_DatabaseModel.Store.Subcontractors" Multiplicity="0..1" />
+    <End Role="Subcontractor_Phase" Type="Gabriq_System_DatabaseModel.Store.Subcontractor_Phase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subcontractor">
+        <PropertyRef Name="Subcontractor_ID" />
+      </Principal>
+      <Dependent Role="Subcontractor_Phase">
+        <PropertyRef Name="Subcontractor_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Supplier_Order_Supplier">
+    <End Role="Supplier" Type="Gabriq_System_DatabaseModel.Store.Suppliers" Multiplicity="1" />
+    <End Role="Supplier_Order" Type="Gabriq_System_DatabaseModel.Store.Supplier_Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier">
+        <PropertyRef Name="Supplier_ID" />
+      </Principal>
+      <Dependent Role="Supplier_Order">
+        <PropertyRef Name="Supplier_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Supplier_Supplier_Request">
+    <End Role="Supplier_Request" Type="Gabriq_System_DatabaseModel.Store.Supplier_Request" Multiplicity="0..1" />
+    <End Role="Supplier" Type="Gabriq_System_DatabaseModel.Store.Suppliers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier_Request">
+        <PropertyRef Name="Supplier_Request_ID" />
+      </Principal>
+      <Dependent Role="Supplier">
+        <PropertyRef Name="Supplier_Request_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Supplier_Supplier_Type">
+    <End Role="Supplier_Type" Type="Gabriq_System_DatabaseModel.Store.Supplier_Type" Multiplicity="0..1" />
+    <End Role="Supplier" Type="Gabriq_System_DatabaseModel.Store.Suppliers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier_Type">
+        <PropertyRef Name="Supplier_Type_ID" />
+      </Principal>
+      <Dependent Role="Supplier">
+        <PropertyRef Name="Supplier_Type_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Supplier_Order_Supplier_Order">
+    <End Role="Supplier_Order" Type="Gabriq_System_DatabaseModel.Store.Supplier_Order" Multiplicity="1" />
+    <End Role="Supplier_Order1" Type="Gabriq_System_DatabaseModel.Store.Supplier_Order" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier_Order">
+        <PropertyRef Name="Supplier_Order_ID" />
+      </Principal>
+      <Dependent Role="Supplier_Order1">
+        <PropertyRef Name="Supplier_Order_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Supplier_Request_Supplier_Request_Status">
+    <End Role="Supplier_Request_Status" Type="Gabriq_System_DatabaseModel.Store.Supplier_Request_Status" Multiplicity="0..1" />
+    <End Role="Supplier_Request" Type="Gabriq_System_DatabaseModel.Store.Supplier_Request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier_Request_Status">
+        <PropertyRef Name="Supplier_Request_Status_ID" />
+      </Principal>
+      <Dependent Role="Supplier_Request">
+        <PropertyRef Name="Supplier_Request_Status_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Task_Task_Status">
+    <End Role="Task_Status" Type="Gabriq_System_DatabaseModel.Store.Task_Status" Multiplicity="1" />
+    <End Role="Task" Type="Gabriq_System_DatabaseModel.Store.Tasks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Task_Status">
+        <PropertyRef Name="Task_Status_ID" />
+      </Principal>
+      <Dependent Role="Task">
+        <PropertyRef Name="Task_Status_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tasks_Equipment_Task">
+    <End Role="Task" Type="Gabriq_System_DatabaseModel.Store.Tasks" Multiplicity="1" />
+    <End Role="Tasks_Equipment" Type="Gabriq_System_DatabaseModel.Store.Tasks_Equipment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Task">
+        <PropertyRef Name="Task_ID" />
+      </Principal>
+      <Dependent Role="Tasks_Equipment">
+        <PropertyRef Name="Task_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tender_Request_Tender">
+    <End Role="Tender" Type="Gabriq_System_DatabaseModel.Store.Tenders" Multiplicity="1" />
+    <End Role="Tender_Request" Type="Gabriq_System_DatabaseModel.Store.Tender_Request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tender">
+        <PropertyRef Name="Tender_ID" />
+      </Principal>
+      <Dependent Role="Tender_Request">
+        <PropertyRef Name="Tender_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tender_Tender_Status">
+    <End Role="Tender_Status" Type="Gabriq_System_DatabaseModel.Store.Tender_Status" Multiplicity="1" />
+    <End Role="Tender" Type="Gabriq_System_DatabaseModel.Store.Tenders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tender_Status">
+        <PropertyRef Name="Tender_Status_ID" />
+      </Principal>
+      <Dependent Role="Tender">
+        <PropertyRef Name="Tender_Status_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tender_Request_Tender_Request_Status">
+    <End Role="Tender_Request_Status" Type="Gabriq_System_DatabaseModel.Store.Tender_Request_Status" Multiplicity="1" />
+    <End Role="Tender_Request" Type="Gabriq_System_DatabaseModel.Store.Tender_Request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tender_Request_Status">
+        <PropertyRef Name="Tender_Request_Status_ID" />
+      </Principal>
+      <Dependent Role="Tender_Request">
+        <PropertyRef Name="Tender_Request_Status_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_User_Role">
+    <End Role="User_Role" Type="Gabriq_System_DatabaseModel.Store.User_Role" Multiplicity="1" />
+    <End Role="User" Type="Gabriq_System_DatabaseModel.Store.Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User_Role">
+        <PropertyRef Name="User_Role_ID" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="User_Role_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inventory_Category1">
+    <End Role="Category1" Type="Gabriq_System_DatabaseModel.Store.Category1" Multiplicity="1" />
+    <End Role="Inventory1" Type="Gabriq_System_DatabaseModel.Store.Inventory1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category1">
+        <PropertyRef Name="Category_ID" />
+      </Principal>
+      <Dependent Role="Inventory1">
+        <PropertyRef Name="Category_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Checkout_Checkin_Date_Checkout_Checkin1">
+    <End Role="Checkout_Checkin1" Type="Gabriq_System_DatabaseModel.Store.Checkout_Checkin1" Multiplicity="0..1" />
+    <End Role="Checkout_Checkin_Date1" Type="Gabriq_System_DatabaseModel.Store.Checkout_Checkin_Date1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Checkout_Checkin1">
+        <PropertyRef Name="Checkout_ID" />
+      </Principal>
+      <Dependent Role="Checkout_Checkin_Date1">
+        <PropertyRef Name="Checkout_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Checkout_Checkin_Date_Tasks_Equipment1">
+    <End Role="Tasks_Equipment" Type="Gabriq_System_DatabaseModel.Store.Tasks_Equipment" Multiplicity="0..1" />
+    <End Role="Checkout_Checkin_Date1" Type="Gabriq_System_DatabaseModel.Store.Checkout_Checkin_Date1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tasks_Equipment">
+        <PropertyRef Name="Tasks_Equipment_ID" />
+      </Principal>
+      <Dependent Role="Checkout_Checkin_Date1">
+        <PropertyRef Name="Tasks_Equipment_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tender_Request_Client1">
+    <End Role="Client1" Type="Gabriq_System_DatabaseModel.Store.Client1" Multiplicity="1" />
+    <End Role="Tender_Request" Type="Gabriq_System_DatabaseModel.Store.Tender_Request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client1">
+        <PropertyRef Name="Client_ID" />
+      </Principal>
+      <Dependent Role="Tender_Request">
+        <PropertyRef Name="Client_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_Employee_Type1">
+    <End Role="Employee_Type" Type="Gabriq_System_DatabaseModel.Store.Employee_Type" Multiplicity="0..1" />
+    <End Role="Employee1" Type="Gabriq_System_DatabaseModel.Store.Employee1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee_Type">
+        <PropertyRef Name="Employee_Type_ID" />
+      </Principal>
+      <Dependent Role="Employee1">
+        <PropertyRef Name="Employee_Type_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_Task_Employee1">
+    <End Role="Employee1" Type="Gabriq_System_DatabaseModel.Store.Employee1" Multiplicity="1" />
+    <End Role="Employee_Task" Type="Gabriq_System_DatabaseModel.Store.Employee_Task" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee1">
+        <PropertyRef Name="Employee_ID" />
+      </Principal>
+      <Dependent Role="Employee_Task">
+        <PropertyRef Name="Employee_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Supplier_Order_Employee1">
+    <End Role="Employee1" Type="Gabriq_System_DatabaseModel.Store.Employee1" Multiplicity="1" />
+    <End Role="Supplier_Order" Type="Gabriq_System_DatabaseModel.Store.Supplier_Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee1">
+        <PropertyRef Name="Employee_ID" />
+      </Principal>
+      <Dependent Role="Supplier_Order">
+        <PropertyRef Name="Employee_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Employee1">
+    <End Role="Employee1" Type="Gabriq_System_DatabaseModel.Store.Employee1" Multiplicity="1" />
+    <End Role="User1" Type="Gabriq_System_DatabaseModel.Store.User1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee1">
+        <PropertyRef Name="Employee_ID" />
+      </Principal>
+      <Dependent Role="User1">
+        <PropertyRef Name="Employee_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_Task_Task1">
+    <End Role="Task1" Type="Gabriq_System_DatabaseModel.Store.Task1" Multiplicity="1" />
+    <End Role="Employee_Task" Type="Gabriq_System_DatabaseModel.Store.Employee_Task" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Task1">
+        <PropertyRef Name="Task_ID" />
+      </Principal>
+      <Dependent Role="Employee_Task">
+        <PropertyRef Name="Task_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tasks_Equipment_Equipment1">
+    <End Role="Equipment1" Type="Gabriq_System_DatabaseModel.Store.Equipment1" Multiplicity="1" />
+    <End Role="Tasks_Equipment" Type="Gabriq_System_DatabaseModel.Store.Tasks_Equipment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Equipment1">
+        <PropertyRef Name="Equipment_ID" />
+      </Principal>
+      <Dependent Role="Tasks_Equipment">
+        <PropertyRef Name="Equipment_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inventory_On_Hand_Inventory1">
+    <End Role="Inventory1" Type="Gabriq_System_DatabaseModel.Store.Inventory1" Multiplicity="1" />
+    <End Role="Inventory_On_Hand" Type="Gabriq_System_DatabaseModel.Store.Inventory_On_Hand" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Inventory1">
+        <PropertyRef Name="Inventory_ID" />
+      </Principal>
+      <Dependent Role="Inventory_On_Hand">
+        <PropertyRef Name="Inventory_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Orderline_Inventory1">
+    <End Role="Inventory1" Type="Gabriq_System_DatabaseModel.Store.Inventory1" Multiplicity="1" />
+    <End Role="Orderline1" Type="Gabriq_System_DatabaseModel.Store.Orderline1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Inventory1">
+        <PropertyRef Name="Inventory_ID" />
+      </Principal>
+      <Dependent Role="Orderline1">
+        <PropertyRef Name="Inventory_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Phase_Inventory_Inventory1">
+    <End Role="Inventory1" Type="Gabriq_System_DatabaseModel.Store.Inventory1" Multiplicity="0..1" />
+    <End Role="Phase_Inventory" Type="Gabriq_System_DatabaseModel.Store.Phase_Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Inventory1">
+        <PropertyRef Name="Inventory_ID" />
+      </Principal>
+      <Dependent Role="Phase_Inventory">
+        <PropertyRef Name="Inventory_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rental_Line_Inventory1">
+    <End Role="Inventory1" Type="Gabriq_System_DatabaseModel.Store.Inventory1" Multiplicity="1" />
+    <End Role="Rental_Line" Type="Gabriq_System_DatabaseModel.Store.Rental_Line" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Inventory1">
+        <PropertyRef Name="Inventory_ID" />
+      </Principal>
+      <Dependent Role="Rental_Line">
+        <PropertyRef Name="Inventory_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Password_History1">
+    <End Role="Password_History" Type="Gabriq_System_DatabaseModel.Store.Password_History" Multiplicity="1" />
+    <End Role="User1" Type="Gabriq_System_DatabaseModel.Store.User1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Password_History">
+        <PropertyRef Name="Password_ID" />
+      </Principal>
+      <Dependent Role="User1">
+        <PropertyRef Name="Password_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Phase_Inventory_Phase1">
+    <End Role="Phase1" Type="Gabriq_System_DatabaseModel.Store.Phase1" Multiplicity="0..1" />
+    <End Role="Phase_Inventory" Type="Gabriq_System_DatabaseModel.Store.Phase_Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Phase1">
+        <PropertyRef Name="Phase_ID" />
+      </Principal>
+      <Dependent Role="Phase_Inventory">
+        <PropertyRef Name="Phase_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Phase_Phase_Status1">
+    <End Role="Phase_Status" Type="Gabriq_System_DatabaseModel.Store.Phase_Status" Multiplicity="1" />
+    <End Role="Phase1" Type="Gabriq_System_DatabaseModel.Store.Phase1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Phase_Status">
+        <PropertyRef Name="Phase_Status_ID" />
+      </Principal>
+      <Dependent Role="Phase1">
+        <PropertyRef Name="Phase_Status_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Phase_Project1">
+    <End Role="Project1" Type="Gabriq_System_DatabaseModel.Store.Project1" Multiplicity="1" />
+    <End Role="Phase1" Type="Gabriq_System_DatabaseModel.Store.Phase1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Project1">
+        <PropertyRef Name="Project_ID" />
+      </Principal>
+      <Dependent Role="Phase1">
+        <PropertyRef Name="Project_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Project_Phase1">
+    <End Role="Phase1" Type="Gabriq_System_DatabaseModel.Store.Phase1" Multiplicity="1" />
+    <End Role="Project1" Type="Gabriq_System_DatabaseModel.Store.Project1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Phase1">
+        <PropertyRef Name="Phase_ID" />
+      </Principal>
+      <Dependent Role="Project1">
+        <PropertyRef Name="Phase_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Subcontractor_Phase_Phase1">
+    <End Role="Phase1" Type="Gabriq_System_DatabaseModel.Store.Phase1" Multiplicity="0..1" />
+    <End Role="Subcontractor_Phase" Type="Gabriq_System_DatabaseModel.Store.Subcontractor_Phase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Phase1">
+        <PropertyRef Name="Phase_ID" />
+      </Principal>
+      <Dependent Role="Subcontractor_Phase">
+        <PropertyRef Name="Phase_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Task_Phase1">
+    <End Role="Phase1" Type="Gabriq_System_DatabaseModel.Store.Phase1" Multiplicity="1" />
+    <End Role="Task1" Type="Gabriq_System_DatabaseModel.Store.Task1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Phase1">
+        <PropertyRef Name="Phase_ID" />
+      </Principal>
+      <Dependent Role="Task1">
+        <PropertyRef Name="Phase_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Project_Project_Status1">
+    <End Role="Project_Status" Type="Gabriq_System_DatabaseModel.Store.Project_Status" Multiplicity="1" />
+    <End Role="Project1" Type="Gabriq_System_DatabaseModel.Store.Project1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Project_Status">
+        <PropertyRef Name="Project_Status_ID" />
+      </Principal>
+      <Dependent Role="Project1">
+        <PropertyRef Name="Project_Status_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Project_Tender1">
+    <End Role="Tender1" Type="Gabriq_System_DatabaseModel.Store.Tender1" Multiplicity="1" />
+    <End Role="Project1" Type="Gabriq_System_DatabaseModel.Store.Project1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tender1">
+        <PropertyRef Name="Tender_ID" />
+      </Principal>
+      <Dependent Role="Project1">
+        <PropertyRef Name="Tender_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Supplier_Order_Project1">
+    <End Role="Project1" Type="Gabriq_System_DatabaseModel.Store.Project1" Multiplicity="1" />
+    <End Role="Supplier_Order" Type="Gabriq_System_DatabaseModel.Store.Supplier_Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Project1">
+        <PropertyRef Name="Project_ID" />
+      </Principal>
+      <Dependent Role="Supplier_Order">
+        <PropertyRef Name="Project_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tender_Project1">
+    <End Role="Project1" Type="Gabriq_System_DatabaseModel.Store.Project1" Multiplicity="1" />
+    <End Role="Tender1" Type="Gabriq_System_DatabaseModel.Store.Tender1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Project1">
+        <PropertyRef Name="Project_ID" />
+      </Principal>
+      <Dependent Role="Tender1">
+        <PropertyRef Name="Project_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rental_Rental_Status1">
+    <End Role="Rental_Status" Type="Gabriq_System_DatabaseModel.Store.Rental_Status" Multiplicity="1" />
+    <End Role="Rental1" Type="Gabriq_System_DatabaseModel.Store.Rental1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rental_Status">
+        <PropertyRef Name="Rental_Status_ID" />
+      </Principal>
+      <Dependent Role="Rental1">
+        <PropertyRef Name="Rental_Status_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rental_Supplier1">
+    <End Role="Supplier1" Type="Gabriq_System_DatabaseModel.Store.Supplier1" Multiplicity="1" />
+    <End Role="Rental1" Type="Gabriq_System_DatabaseModel.Store.Rental1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier1">
+        <PropertyRef Name="Supplier_ID" />
+      </Principal>
+      <Dependent Role="Rental1">
+        <PropertyRef Name="Supplier_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rental_Request_Supplier1">
+    <End Role="Supplier1" Type="Gabriq_System_DatabaseModel.Store.Supplier1" Multiplicity="0..1" />
+    <End Role="Rental_Request" Type="Gabriq_System_DatabaseModel.Store.Rental_Request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier1">
+        <PropertyRef Name="Supplier_ID" />
+      </Principal>
+      <Dependent Role="Rental_Request">
+        <PropertyRef Name="Supplier_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Subcontractor_Phase_Subcontractor1">
+    <End Role="Subcontractor1" Type="Gabriq_System_DatabaseModel.Store.Subcontractor1" Multiplicity="0..1" />
+    <End Role="Subcontractor_Phase" Type="Gabriq_System_DatabaseModel.Store.Subcontractor_Phase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subcontractor1">
+        <PropertyRef Name="Subcontractor_ID" />
+      </Principal>
+      <Dependent Role="Subcontractor_Phase">
+        <PropertyRef Name="Subcontractor_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Supplier_Order_Supplier1">
+    <End Role="Supplier1" Type="Gabriq_System_DatabaseModel.Store.Supplier1" Multiplicity="1" />
+    <End Role="Supplier_Order" Type="Gabriq_System_DatabaseModel.Store.Supplier_Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier1">
+        <PropertyRef Name="Supplier_ID" />
+      </Principal>
+      <Dependent Role="Supplier_Order">
+        <PropertyRef Name="Supplier_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Supplier_Supplier_Request1">
+    <End Role="Supplier_Request" Type="Gabriq_System_DatabaseModel.Store.Supplier_Request" Multiplicity="0..1" />
+    <End Role="Supplier1" Type="Gabriq_System_DatabaseModel.Store.Supplier1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier_Request">
+        <PropertyRef Name="Supplier_Request_ID" />
+      </Principal>
+      <Dependent Role="Supplier1">
+        <PropertyRef Name="Supplier_Request_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Supplier_Supplier_Type1">
+    <End Role="Supplier_Type" Type="Gabriq_System_DatabaseModel.Store.Supplier_Type" Multiplicity="0..1" />
+    <End Role="Supplier1" Type="Gabriq_System_DatabaseModel.Store.Supplier1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier_Type">
+        <PropertyRef Name="Supplier_Type_ID" />
+      </Principal>
+      <Dependent Role="Supplier1">
+        <PropertyRef Name="Supplier_Type_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Task_Task_Status1">
+    <End Role="Task_Status" Type="Gabriq_System_DatabaseModel.Store.Task_Status" Multiplicity="1" />
+    <End Role="Task1" Type="Gabriq_System_DatabaseModel.Store.Task1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Task_Status">
+        <PropertyRef Name="Task_Status_ID" />
+      </Principal>
+      <Dependent Role="Task1">
+        <PropertyRef Name="Task_Status_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tasks_Equipment_Task1">
+    <End Role="Task1" Type="Gabriq_System_DatabaseModel.Store.Task1" Multiplicity="1" />
+    <End Role="Tasks_Equipment" Type="Gabriq_System_DatabaseModel.Store.Tasks_Equipment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Task1">
+        <PropertyRef Name="Task_ID" />
+      </Principal>
+      <Dependent Role="Tasks_Equipment">
+        <PropertyRef Name="Task_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tender_Request_Tender1">
+    <End Role="Tender1" Type="Gabriq_System_DatabaseModel.Store.Tender1" Multiplicity="1" />
+    <End Role="Tender_Request" Type="Gabriq_System_DatabaseModel.Store.Tender_Request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tender1">
+        <PropertyRef Name="Tender_ID" />
+      </Principal>
+      <Dependent Role="Tender_Request">
+        <PropertyRef Name="Tender_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tender_Tender_Status1">
+    <End Role="Tender_Status" Type="Gabriq_System_DatabaseModel.Store.Tender_Status" Multiplicity="1" />
+    <End Role="Tender1" Type="Gabriq_System_DatabaseModel.Store.Tender1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tender_Status">
+        <PropertyRef Name="Tender_Status_ID" />
+      </Principal>
+      <Dependent Role="Tender1">
+        <PropertyRef Name="Tender_Status_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_User_Role1">
+    <End Role="User_Role" Type="Gabriq_System_DatabaseModel.Store.User_Role" Multiplicity="1" />
+    <End Role="User1" Type="Gabriq_System_DatabaseModel.Store.User1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User_Role">
+        <PropertyRef Name="User_Role_ID" />
+      </Principal>
+      <Dependent Role="User1">
+        <PropertyRef Name="User_Role_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inventory_Category2">
+    <End Role="Category2" Type="Gabriq_System_DatabaseModel.Store.Category2" Multiplicity="1" />
+    <End Role="Inventory2" Type="Gabriq_System_DatabaseModel.Store.Inventory2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category2">
+        <PropertyRef Name="Category_ID" />
+      </Principal>
+      <Dependent Role="Inventory2">
+        <PropertyRef Name="Category_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Checkout_Checkin_Date_Checkout_Checkin2">
+    <End Role="Checkout_Checkin2" Type="Gabriq_System_DatabaseModel.Store.Checkout_Checkin2" Multiplicity="0..1" />
+    <End Role="Checkout_Checkin_Date2" Type="Gabriq_System_DatabaseModel.Store.Checkout_Checkin_Date2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Checkout_Checkin2">
+        <PropertyRef Name="Checkout_ID" />
+      </Principal>
+      <Dependent Role="Checkout_Checkin_Date2">
+        <PropertyRef Name="Checkout_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Checkout_Checkin_Date_Tasks_Equipment2">
+    <End Role="Tasks_Equipment" Type="Gabriq_System_DatabaseModel.Store.Tasks_Equipment" Multiplicity="0..1" />
+    <End Role="Checkout_Checkin_Date2" Type="Gabriq_System_DatabaseModel.Store.Checkout_Checkin_Date2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tasks_Equipment">
+        <PropertyRef Name="Tasks_Equipment_ID" />
+      </Principal>
+      <Dependent Role="Checkout_Checkin_Date2">
+        <PropertyRef Name="Tasks_Equipment_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tender_Request_Client2">
+    <End Role="Client2" Type="Gabriq_System_DatabaseModel.Store.Client2" Multiplicity="1" />
+    <End Role="Tender_Request" Type="Gabriq_System_DatabaseModel.Store.Tender_Request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client2">
+        <PropertyRef Name="Client_ID" />
+      </Principal>
+      <Dependent Role="Tender_Request">
+        <PropertyRef Name="Client_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_Employee_Type2">
+    <End Role="Employee_Type" Type="Gabriq_System_DatabaseModel.Store.Employee_Type" Multiplicity="0..1" />
+    <End Role="Employee2" Type="Gabriq_System_DatabaseModel.Store.Employee2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee_Type">
+        <PropertyRef Name="Employee_Type_ID" />
+      </Principal>
+      <Dependent Role="Employee2">
+        <PropertyRef Name="Employee_Type_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_Task_Employee2">
+    <End Role="Employee2" Type="Gabriq_System_DatabaseModel.Store.Employee2" Multiplicity="1" />
+    <End Role="Employee_Task" Type="Gabriq_System_DatabaseModel.Store.Employee_Task" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee2">
+        <PropertyRef Name="Employee_ID" />
+      </Principal>
+      <Dependent Role="Employee_Task">
+        <PropertyRef Name="Employee_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Supplier_Order_Employee2">
+    <End Role="Employee2" Type="Gabriq_System_DatabaseModel.Store.Employee2" Multiplicity="1" />
+    <End Role="Supplier_Order" Type="Gabriq_System_DatabaseModel.Store.Supplier_Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee2">
+        <PropertyRef Name="Employee_ID" />
+      </Principal>
+      <Dependent Role="Supplier_Order">
+        <PropertyRef Name="Employee_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Employee2">
+    <End Role="Employee2" Type="Gabriq_System_DatabaseModel.Store.Employee2" Multiplicity="1" />
+    <End Role="User2" Type="Gabriq_System_DatabaseModel.Store.User2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee2">
+        <PropertyRef Name="Employee_ID" />
+      </Principal>
+      <Dependent Role="User2">
+        <PropertyRef Name="Employee_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_Task_Task2">
+    <End Role="Task2" Type="Gabriq_System_DatabaseModel.Store.Task2" Multiplicity="1" />
+    <End Role="Employee_Task" Type="Gabriq_System_DatabaseModel.Store.Employee_Task" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Task2">
+        <PropertyRef Name="Task_ID" />
+      </Principal>
+      <Dependent Role="Employee_Task">
+        <PropertyRef Name="Task_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tasks_Equipment_Equipment2">
+    <End Role="Equipment2" Type="Gabriq_System_DatabaseModel.Store.Equipment2" Multiplicity="1" />
+    <End Role="Tasks_Equipment" Type="Gabriq_System_DatabaseModel.Store.Tasks_Equipment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Equipment2">
+        <PropertyRef Name="Equipment_ID" />
+      </Principal>
+      <Dependent Role="Tasks_Equipment">
+        <PropertyRef Name="Equipment_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inventory_On_Hand_Inventory2">
+    <End Role="Inventory2" Type="Gabriq_System_DatabaseModel.Store.Inventory2" Multiplicity="1" />
+    <End Role="Inventory_On_Hand" Type="Gabriq_System_DatabaseModel.Store.Inventory_On_Hand" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Inventory2">
+        <PropertyRef Name="Inventory_ID" />
+      </Principal>
+      <Dependent Role="Inventory_On_Hand">
+        <PropertyRef Name="Inventory_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Orderline_Inventory2">
+    <End Role="Inventory2" Type="Gabriq_System_DatabaseModel.Store.Inventory2" Multiplicity="1" />
+    <End Role="Orderline2" Type="Gabriq_System_DatabaseModel.Store.Orderline2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Inventory2">
+        <PropertyRef Name="Inventory_ID" />
+      </Principal>
+      <Dependent Role="Orderline2">
+        <PropertyRef Name="Inventory_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Phase_Inventory_Inventory2">
+    <End Role="Inventory2" Type="Gabriq_System_DatabaseModel.Store.Inventory2" Multiplicity="0..1" />
+    <End Role="Phase_Inventory" Type="Gabriq_System_DatabaseModel.Store.Phase_Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Inventory2">
+        <PropertyRef Name="Inventory_ID" />
+      </Principal>
+      <Dependent Role="Phase_Inventory">
+        <PropertyRef Name="Inventory_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rental_Line_Inventory2">
+    <End Role="Inventory2" Type="Gabriq_System_DatabaseModel.Store.Inventory2" Multiplicity="1" />
+    <End Role="Rental_Line" Type="Gabriq_System_DatabaseModel.Store.Rental_Line" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Inventory2">
+        <PropertyRef Name="Inventory_ID" />
+      </Principal>
+      <Dependent Role="Rental_Line">
+        <PropertyRef Name="Inventory_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Password_History2">
+    <End Role="Password_History" Type="Gabriq_System_DatabaseModel.Store.Password_History" Multiplicity="1" />
+    <End Role="User2" Type="Gabriq_System_DatabaseModel.Store.User2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Password_History">
+        <PropertyRef Name="Password_ID" />
+      </Principal>
+      <Dependent Role="User2">
+        <PropertyRef Name="Password_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Phase_Inventory_Phase2">
+    <End Role="Phase2" Type="Gabriq_System_DatabaseModel.Store.Phase2" Multiplicity="0..1" />
+    <End Role="Phase_Inventory" Type="Gabriq_System_DatabaseModel.Store.Phase_Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Phase2">
+        <PropertyRef Name="Phase_ID" />
+      </Principal>
+      <Dependent Role="Phase_Inventory">
+        <PropertyRef Name="Phase_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Phase_Phase_Status2">
+    <End Role="Phase_Status" Type="Gabriq_System_DatabaseModel.Store.Phase_Status" Multiplicity="1" />
+    <End Role="Phase2" Type="Gabriq_System_DatabaseModel.Store.Phase2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Phase_Status">
+        <PropertyRef Name="Phase_Status_ID" />
+      </Principal>
+      <Dependent Role="Phase2">
+        <PropertyRef Name="Phase_Status_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Phase_Project2">
+    <End Role="Project2" Type="Gabriq_System_DatabaseModel.Store.Project2" Multiplicity="1" />
+    <End Role="Phase2" Type="Gabriq_System_DatabaseModel.Store.Phase2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Project2">
+        <PropertyRef Name="Project_ID" />
+      </Principal>
+      <Dependent Role="Phase2">
+        <PropertyRef Name="Project_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Project_Phase2">
+    <End Role="Phase2" Type="Gabriq_System_DatabaseModel.Store.Phase2" Multiplicity="1" />
+    <End Role="Project2" Type="Gabriq_System_DatabaseModel.Store.Project2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Phase2">
+        <PropertyRef Name="Phase_ID" />
+      </Principal>
+      <Dependent Role="Project2">
+        <PropertyRef Name="Phase_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Subcontractor_Phase_Phase2">
+    <End Role="Phase2" Type="Gabriq_System_DatabaseModel.Store.Phase2" Multiplicity="0..1" />
+    <End Role="Subcontractor_Phase" Type="Gabriq_System_DatabaseModel.Store.Subcontractor_Phase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Phase2">
+        <PropertyRef Name="Phase_ID" />
+      </Principal>
+      <Dependent Role="Subcontractor_Phase">
+        <PropertyRef Name="Phase_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Task_Phase2">
+    <End Role="Phase2" Type="Gabriq_System_DatabaseModel.Store.Phase2" Multiplicity="1" />
+    <End Role="Task2" Type="Gabriq_System_DatabaseModel.Store.Task2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Phase2">
+        <PropertyRef Name="Phase_ID" />
+      </Principal>
+      <Dependent Role="Task2">
+        <PropertyRef Name="Phase_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Project_Project_Status2">
+    <End Role="Project_Status" Type="Gabriq_System_DatabaseModel.Store.Project_Status" Multiplicity="1" />
+    <End Role="Project2" Type="Gabriq_System_DatabaseModel.Store.Project2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Project_Status">
+        <PropertyRef Name="Project_Status_ID" />
+      </Principal>
+      <Dependent Role="Project2">
+        <PropertyRef Name="Project_Status_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Project_Tender2">
+    <End Role="Tender2" Type="Gabriq_System_DatabaseModel.Store.Tender2" Multiplicity="1" />
+    <End Role="Project2" Type="Gabriq_System_DatabaseModel.Store.Project2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tender2">
+        <PropertyRef Name="Tender_ID" />
+      </Principal>
+      <Dependent Role="Project2">
+        <PropertyRef Name="Tender_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Supplier_Order_Project2">
+    <End Role="Project2" Type="Gabriq_System_DatabaseModel.Store.Project2" Multiplicity="1" />
+    <End Role="Supplier_Order" Type="Gabriq_System_DatabaseModel.Store.Supplier_Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Project2">
+        <PropertyRef Name="Project_ID" />
+      </Principal>
+      <Dependent Role="Supplier_Order">
+        <PropertyRef Name="Project_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tender_Project2">
+    <End Role="Project2" Type="Gabriq_System_DatabaseModel.Store.Project2" Multiplicity="1" />
+    <End Role="Tender2" Type="Gabriq_System_DatabaseModel.Store.Tender2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Project2">
+        <PropertyRef Name="Project_ID" />
+      </Principal>
+      <Dependent Role="Tender2">
+        <PropertyRef Name="Project_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rental_Rental_Status2">
+    <End Role="Rental_Status" Type="Gabriq_System_DatabaseModel.Store.Rental_Status" Multiplicity="1" />
+    <End Role="Rental2" Type="Gabriq_System_DatabaseModel.Store.Rental2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rental_Status">
+        <PropertyRef Name="Rental_Status_ID" />
+      </Principal>
+      <Dependent Role="Rental2">
+        <PropertyRef Name="Rental_Status_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rental_Supplier2">
+    <End Role="Supplier2" Type="Gabriq_System_DatabaseModel.Store.Supplier2" Multiplicity="1" />
+    <End Role="Rental2" Type="Gabriq_System_DatabaseModel.Store.Rental2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier2">
+        <PropertyRef Name="Supplier_ID" />
+      </Principal>
+      <Dependent Role="Rental2">
+        <PropertyRef Name="Supplier_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rental_Request_Supplier2">
+    <End Role="Supplier2" Type="Gabriq_System_DatabaseModel.Store.Supplier2" Multiplicity="0..1" />
+    <End Role="Rental_Request" Type="Gabriq_System_DatabaseModel.Store.Rental_Request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier2">
+        <PropertyRef Name="Supplier_ID" />
+      </Principal>
+      <Dependent Role="Rental_Request">
+        <PropertyRef Name="Supplier_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Subcontractor_Phase_Subcontractor2">
+    <End Role="Subcontractor2" Type="Gabriq_System_DatabaseModel.Store.Subcontractor2" Multiplicity="0..1" />
+    <End Role="Subcontractor_Phase" Type="Gabriq_System_DatabaseModel.Store.Subcontractor_Phase" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subcontractor2">
+        <PropertyRef Name="Subcontractor_ID" />
+      </Principal>
+      <Dependent Role="Subcontractor_Phase">
+        <PropertyRef Name="Subcontractor_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Supplier_Order_Supplier2">
+    <End Role="Supplier2" Type="Gabriq_System_DatabaseModel.Store.Supplier2" Multiplicity="1" />
+    <End Role="Supplier_Order" Type="Gabriq_System_DatabaseModel.Store.Supplier_Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier2">
+        <PropertyRef Name="Supplier_ID" />
+      </Principal>
+      <Dependent Role="Supplier_Order">
+        <PropertyRef Name="Supplier_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Supplier_Supplier_Request2">
+    <End Role="Supplier_Request" Type="Gabriq_System_DatabaseModel.Store.Supplier_Request" Multiplicity="0..1" />
+    <End Role="Supplier2" Type="Gabriq_System_DatabaseModel.Store.Supplier2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier_Request">
+        <PropertyRef Name="Supplier_Request_ID" />
+      </Principal>
+      <Dependent Role="Supplier2">
+        <PropertyRef Name="Supplier_Request_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Supplier_Supplier_Type2">
+    <End Role="Supplier_Type" Type="Gabriq_System_DatabaseModel.Store.Supplier_Type" Multiplicity="0..1" />
+    <End Role="Supplier2" Type="Gabriq_System_DatabaseModel.Store.Supplier2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Supplier_Type">
+        <PropertyRef Name="Supplier_Type_ID" />
+      </Principal>
+      <Dependent Role="Supplier2">
+        <PropertyRef Name="Supplier_Type_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Task_Task_Status2">
+    <End Role="Task_Status" Type="Gabriq_System_DatabaseModel.Store.Task_Status" Multiplicity="1" />
+    <End Role="Task2" Type="Gabriq_System_DatabaseModel.Store.Task2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Task_Status">
+        <PropertyRef Name="Task_Status_ID" />
+      </Principal>
+      <Dependent Role="Task2">
+        <PropertyRef Name="Task_Status_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tasks_Equipment_Task2">
+    <End Role="Task2" Type="Gabriq_System_DatabaseModel.Store.Task2" Multiplicity="1" />
+    <End Role="Tasks_Equipment" Type="Gabriq_System_DatabaseModel.Store.Tasks_Equipment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Task2">
+        <PropertyRef Name="Task_ID" />
+      </Principal>
+      <Dependent Role="Tasks_Equipment">
+        <PropertyRef Name="Task_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tender_Request_Tender2">
+    <End Role="Tender2" Type="Gabriq_System_DatabaseModel.Store.Tender2" Multiplicity="1" />
+    <End Role="Tender_Request" Type="Gabriq_System_DatabaseModel.Store.Tender_Request" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tender2">
+        <PropertyRef Name="Tender_ID" />
+      </Principal>
+      <Dependent Role="Tender_Request">
+        <PropertyRef Name="Tender_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tender_Tender_Status2">
+    <End Role="Tender_Status" Type="Gabriq_System_DatabaseModel.Store.Tender_Status" Multiplicity="1" />
+    <End Role="Tender2" Type="Gabriq_System_DatabaseModel.Store.Tender2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tender_Status">
+        <PropertyRef Name="Tender_Status_ID" />
+      </Principal>
+      <Dependent Role="Tender2">
+        <PropertyRef Name="Tender_Status_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_User_Role2">
+    <End Role="User_Role" Type="Gabriq_System_DatabaseModel.Store.User_Role" Multiplicity="1" />
+    <End Role="User2" Type="Gabriq_System_DatabaseModel.Store.User2" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User_Role">
+        <PropertyRef Name="User_Role_ID" />
+      </Principal>
+      <Dependent Role="User2">
+        <PropertyRef Name="User_Role_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
