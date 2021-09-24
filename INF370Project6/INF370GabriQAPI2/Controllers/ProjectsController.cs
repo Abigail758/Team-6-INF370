@@ -22,9 +22,9 @@ namespace INF370GabriQAPI.Controllers
         private Gabriq_System_DatabaseEntities db = new Gabriq_System_DatabaseEntities();
 
         // GET: api/Projects
-        public IQueryable<Project> GetProjects()
+        public IEnumerable<Project> GetProjects()
         {
-            return db.Projects;
+            return db.Projects.AsEnumerable();
         }
 
         // GET: api/Projects/5

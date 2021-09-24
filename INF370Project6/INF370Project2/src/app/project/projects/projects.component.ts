@@ -15,7 +15,7 @@ import { MainService } from 'src/app/service/main.service';
 export class ProjectsComponent implements OnInit {
   projects: any = [
     { Project_ID: 1,
-      Project_Status: 'In Progress',
+      Project_Status_ID: 'In Progress',
       Project_Name: 'M1 Road Construction',
       Project_Description: 'Road Construction',
       Start_Date: '12 May 2021',

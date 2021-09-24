@@ -3,6 +3,23 @@
     
       <h1 >Add Project</h1>
       <div class="form-group">
+
+        
+        <div class="form-group">
+          <label>Tender</label><br>
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-select placeholder="Select tender" class="form-control"
+            [(ngModel)]="project.id">
+            
+            <mat-option *ngFor="let tenders of tender"   [ngValue]="tenders.id">
+              {{tenders.clientName}}
+            </mat-option>
+            </mat-select>
+  
+          </mat-form-field>
+      </div>
+          <br><br>
+
         <label>Project Name:</label><br>
         <mat-form-field class="full-width" appearance="outline">
           <input matInput  placeholder="Enter the project name" [(ngModel)]="project.Project_Name"
@@ -24,12 +41,14 @@
         <label>Project Status:</label><br>
         <mat-form-field appearance="outline" class="full-width">
           <mat-select placeholder="Select project status" class="form-control"
-          [(ngModel)]="project.Project_Status">
-            <mat-option value="In Progress">In Progress</mat-option>
+          [(ngModel)]="project.Project_Status_ID" >
+
+          <mat-option *ngFor="let project_status of project_Status"   [ngValue]="project_status.Project_Status_ID">{{project_status.Description}}</mat-option>
+            <!-- <mat-option value="In Progress">In Progress</mat-option>
             <mat-option value="On-Hold">On-Hold</mat-option>
             <mat-option value="Completed">Completed</mat-option>
             <mat-option value="Cancelled">Canceled</mat-option>
-            <mat-option value="Archived">Archived</mat-option>
+            <mat-option value="Archived">Archived</mat-option> -->
             
           </mat-select>
           
@@ -78,13 +97,24 @@
     </div>
         <br><br>
 
+        <div class="form-group">
+          <label>Phase</label><br>
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-select placeholder="Select phase name" class="form-control"
+            [(ngModel)]="project.Phase_ID">
+            
+            <mat-option *ngFor="let phases of phase"   [ngValue]="phases.Phase_ID">
+              {{phases.Phase_Name}}
+            </mat-option>
+            </mat-select>
+  
+          </mat-form-field>
+      </div>
+
         <div class="button-flex-container">
          
           <button routerLink="/project" class="btn btn-danger" (click)="goBack()">Cancel</button>
           &nbsp;&nbsp;
-          <button [disabled] class="btn btn-primary" (click)="saveProduct()">Save</button> 
-      
+          <button [disabled] class="btn btn-primary" (click)="saveProduct()">Save</button>   
       </div>
-
-    
   </div>

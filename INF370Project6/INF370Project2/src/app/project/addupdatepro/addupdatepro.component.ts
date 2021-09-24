@@ -1,10 +1,15 @@
 
+import { MainService } from 'src/app/service/main.service';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { Project } from 'src/app/interface/project';
+import { Project_Status } from 'src/app/interface/project';
+import { Phase } from 'src/app/interface/project';
+import { Phase_Status } from 'src/app/interface/project';
+import { Tender } from 'src/app/interface/tender';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
-import { MainService } from "./../../service/main.service";
+
 
 @Component({
   selector: 'app-addupdatepro',
@@ -18,6 +23,10 @@ export class AddupdateproComponent implements OnInit {
   loading = false;
   submitted = false;
   project!: Project;
+  phase!: Phase[];
+  phase_Status!: Phase_Status[];
+  project_Status!: Project_Status[];
+  tender!:Tender[];
 
   constructor(
     private mainService: MainService,
@@ -26,13 +35,15 @@ export class AddupdateproComponent implements OnInit {
 
   ngOnInit(): void {
     this.project = new Project();
-    this.project.Project_Name = "House";
-    this.project.Project_Description = "House Building";
-    this.project.Project_Status= "Complete"
-    this.project.Site_Address= "22 Bakenveld, Witbank "
-    this.project.Site_Name= "Bakenveld nature resort"
-    this.project.End_Date="22 May 2022"
-    this.project.Start_Date="03 May 2021"
+    this.project.Project_Name = " ";
+    this.project.Project_Description = " ";
+    this.project.Project_Status_ID= ""
+    this.project.Site_Address= " "
+    this.project.Site_Name= " "
+    this.project.End_Date=" "
+    this.project.Start_Date=" ";
+
+    // this.getProjectStatus();
   }
 
   goBack() {
@@ -46,6 +57,27 @@ export class AddupdateproComponent implements OnInit {
     this.mainService.PostProject(project).subscribe(() => this.goBack());
   }
 
+  private getProjectStatus(project_status: Project_Status) {
+    this.mainService.GetProject_Statuses().subscribe(data => this.project_Status = data);
+  }
+
+  private getProjects(project: Project) {
+    this.mainService.GetProjects().subscribe();
+  }
+
+  private getPhases(phase: Phase) {
+    this.mainService.GetPhases().subscribe();
+  }
+
+  private getPhaseStatus(phase_status: Phase_Status) {
+    this.mainService.GetPhase_Status().subscribe();
+  }
+
+  private getTenders(tenders: Tender) {
+    this.mainService.getTenders().subscribe();
+  }
+
+
   saveProduct() {
     if (this.project) {
       if (this.project.Project_ID) {
@@ -56,4 +88,7 @@ export class AddupdateproComponent implements OnInit {
       }
     }
   }
+
+
+
 }

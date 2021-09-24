@@ -1,9 +1,13 @@
+
 import { Supplier } from './../interface/supplier';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Project } from '../interface/project';
+import { Phase } from '../interface/project';
+import { Phase_Status } from '../interface/project';
+import { Project_Status } from '../interface/project';
 import { Task } from '../interface/task';
 import { Tender } from '../interface/tender';
 
@@ -23,7 +27,7 @@ export class MainService {
   constructor(private http: HttpClient) { }
 
   GetProjects():  Observable<Project[]> {
-    return this.http.get<Project[]>(`${this.server}Project/GetProjects`)
+    return this.http.get<Project[]>(`${this.server}Project`)
     .pipe(map(res => res));
   }
   
@@ -38,21 +42,34 @@ export class MainService {
   // }
 
   PostProject(project:Project) {
-    return this.http.post<Project>(`${this.server}Project/PostProject`,project, this.httpOptions)
+    return this.http.post<Project>(`${this.server}Projects`,project, this.httpOptions)
     .pipe(map(res => res));
   }
 
-  GetProject_Statuses():  Observable<Project[]> {
-    return this.http.get<Project[]>(`${this.server}Project_Status/GetProject_Status`)
+  GetProject_Statuses():  Observable<Project_Status[]> {
+    return this.http.get<Project_Status[]>(`${this.server}Project_Status`)
     .pipe(map(res => res));
 
   }
 
-  GetProject_Status(id:number):  Observable<Project[]> {
-    return this.http.get<Project[]>(`${this.server}Project_Status/GetProject_Status` + id)
+  GetProject_Status(id:number):  Observable<Project_Status[]> {
+    return this.http.get<Project_Status[]>(`${this.server}Project_Status` + id)
     .pipe(map(res => res));
 
   }
+
+  GetPhases():  Observable<Phase[]> {
+    return this.http.get<Phase[]>(`${this.server}Phases`)
+    .pipe(map(res => res));
+  }
+
+  GetPhase_Status():  Observable<Phase_Status[]> {
+    return this.http.get<Phase_Status[]>(`${this.server}Phase_Status`)
+    .pipe(map(res => res));
+  }
+
+
+
 
   getTasks(): Observable<Task[]> {
     return this.http.get<Task[]>(this.server + '/GetTasks/')
