@@ -40,6 +40,7 @@ import { ExpensereportComponent } from './reports/expensereport/expensereport.co
 import { SubcontractorreportComponent } from './reports/subcontractorreport/subcontractorreport.component';
 import { AddupdateproComponent } from './project/addupdatepro/addupdatepro.component';
 import { AddTaskComponent } from './task/add-task/add-task.component';
+import { TaskComponent } from './task/task/task.component';
 import { EditTaskComponent } from './task/edit-task/edit-task.component';
 import { ViewTaskComponent } from './task/view-task/view-task.component';
 import { TenderComponent } from './tender/tender/tender.component';
@@ -97,6 +98,7 @@ import { SubcontractorComponent } from './subcontractor/subcontractor/subcontrac
     AddTaskComponent,
     EditTaskComponent,
     ViewTaskComponent,
+    TaskComponent,
     TenderComponent,
     FileuploadComponent,
     AddProposedTenderComponent,
