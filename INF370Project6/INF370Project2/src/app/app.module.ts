@@ -39,18 +39,7 @@ import { InventoryreportComponent } from './reports/inventoryreport/inventoryrep
 import { ExpensereportComponent } from './reports/expensereport/expensereport.component';
 import { SubcontractorreportComponent } from './reports/subcontractorreport/subcontractorreport.component';
 import { AddupdateproComponent } from './project/addupdatepro/addupdatepro.component';
-import { AddTaskComponent } from './task/add-task/add-task.component';
-import { TaskComponent } from './task/task/task.component';
-import { EditTaskComponent } from './task/edit-task/edit-task.component';
-import { ViewTaskComponent } from './task/view-task/view-task.component';
-import { TenderComponent } from './tender/tender/tender.component';
-import { FileuploadComponent } from './tender/fileupload/fileupload.component';
-import { AddProposedTenderComponent } from './tender/add-proposed-tender/add-proposed-tender.component';
-import { SupplierComponent } from './supplier/supplier/supplier.component';
-import { AddSupplierComponent } from './supplier/add-supplier/add-supplier.component';
-import { EditSupplierComponent } from './supplier/edit-supplier/edit-supplier.component';
-import { ViewSupplierComponent } from './supplier/view-supplier/view-supplier.component';
-import { RequestQuotationComponent } from './supplier/request-quotation/request-quotation.component';
+
 import { PhaseComponent } from './phase/phase/phase.component';
 import { AddPhaseComponent } from './phase/add-phase/add-phase.component';
 import { UpdatePhaseComponent } from './phase/update-phase/update-phase.component';
@@ -95,18 +84,8 @@ import { SubcontractorComponent } from './subcontractor/subcontractor/subcontrac
     ExpensereportComponent,
     SubcontractorreportComponent,
     AddupdateproComponent,
-    AddTaskComponent,
-    EditTaskComponent,
-    ViewTaskComponent,
-    TaskComponent,
-    TenderComponent,
-    FileuploadComponent,
-    AddProposedTenderComponent,
-    SupplierComponent,
-    AddSupplierComponent,
-    EditSupplierComponent,
-    ViewSupplierComponent,
-    RequestQuotationComponent,
+
+
     PhaseComponent,
     AddPhaseComponent,
     UpdatePhaseComponent,
