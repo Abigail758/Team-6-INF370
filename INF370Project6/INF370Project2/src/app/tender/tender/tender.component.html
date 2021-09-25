@@ -1,0 +1,55 @@
+<h1 class="title">Tender</h1>
+<br>
+<div>
+  <input  type="text" id="searchtenderinput" placeholder="Search Tender">
+  <button class="btn btn-primary">Search</button>
+</div>
+
+<div class="top-right">
+    <button class="btn btn-primary btn-lg"  id="addtender" routerLink="/add-proposed-tender">
+    Add Proposed tender </button>
+</div>
+<div class="row" >
+  <div class="col-xs-12">
+    <div class="table table-responsive table-hover">
+      <table class="table table-bordered table-condensed ">
+        <thead>
+          <tr>
+            <th>Company Name</th>
+            <th>Tender Description</th>
+            <th>Tender Source</th>
+            <th>Date submitted</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let tender of tender">
+            <td>{{tender. clientName}</td>
+            <td>{{tender.tenderDescription}}</td>
+            <td>{{tender.tenderSource}}</td>
+            <td>{{tender.datesubmitted}}</td>
+
+            <td > 
+              <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+                  <mat-icon>more_vert</mat-icon>
+              </button>
+              <mat-menu  #menu="matMenu" class="popup_menu" xPosition="before">
+              <button [routerLink]="['/fileupload']" mat-menu-item><mat-icon>edit_note</mat-icon>Attach tender advertisement documents</button>
+              <button mat-raised-button (click)="openDialog()"><mat-icon>description</mat-icon>Accept Tender</button>
+            </mat-menu>
+          </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+   <div>
+    <h2 mat-dialog-title>Accept Tender?</h2>
+    <div mat-dialog-actions>
+      <button mat-button (click)="onNoClick()">Close</button>
+      <button mat-button (click)="submit()">Accept</button>
+    </div>
+  </div>
+</div>
